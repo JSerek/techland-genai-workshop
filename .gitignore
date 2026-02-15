@@ -26,8 +26,9 @@ data/processed/*.parquet
 !data/processed/.gitkeep
 !data/evaluation/.gitkeep
 
-# Evaluation data (golden dataset) JEST commitowany do repo - nie ignoruj
-!data/evaluation/*.json
+# Pliki warsztatowe SĄ commitowane do repo
+!data/processed/workshop_sample.csv
+!data/evaluation/golden_dataset.json
 !data/evaluation/*.csv
 
 # IDE
