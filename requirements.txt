@@ -1,0 +1,34 @@
+# Core dependencies
+requests>=2.31.0
+pydantic>=2.5.0
+pandas>=2.1.0
+numpy>=1.24.0
+
+# Progress tracking
+tqdm>=4.66.0
+
+# Rate limiting
+ratelimit>=2.2.1
+
+# Jupyter notebooks
+jupyter>=1.0.0
+ipykernel>=6.25.0
+notebook>=7.0.0
+
+# Data visualization
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.18.0
+
+# Data formats
+pyarrow>=14.0.0  # for parquet support
+
+# LLM API clients
+openai>=1.12.0
+anthropic>=0.20.0  # Optional: for Anthropic Claude support
+
+# Structured outputs
+instructor>=1.2.0
+
+# Optional: for better CLI experience
+rich>=13.7.0

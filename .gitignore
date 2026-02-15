@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data files - raw data can be large
+data/raw/*.json
+data/raw/*.csv
+data/raw/*.parquet
+data/processed/*.json
+data/processed/*.csv
+data/processed/*.parquet
+
+# Keep directory structure but ignore contents
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/evaluation/.gitkeep
+
+# Evaluation data (golden dataset) JEST commitowany do repo - nie ignoruj
+!data/evaluation/*.json
+!data/evaluation/*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# API keys and secrets
+.env
+secrets.json
+*.key
+
+# Model outputs
+outputs/
+models/
+checkpoints/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
