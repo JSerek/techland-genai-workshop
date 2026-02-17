@@ -1,147 +1,441 @@
-review_id,author_id,review_text,language,created_date,sentiment,voted_up,votes_up,votes_funny,playtime_hours,playtime_at_review_minutes,steam_purchase,received_for_free,early_access,review_length
-206821682,76561198230863060,"its AMAZING how they managed to ruin 85 fun hours of gameplay with one absolute dog shit mission. i have been coop with my wife the entire story and we have looked forward to the asylum and exploring it just for the entire mission to be forced stealth with so many UNKILLABLE volatiles that i actually fucking hated the mission more then any other i have ever done in all 3 games. it ruined the hype of the game for me and completly made me wanna stop playing for the night. instead of having a cool scary dungeon to explore with a hidden chimera to fight inside that was tested and experimented on we got trash forced stealth with no story weight to it in a tiny ass 2 wing hallway
+id,review_id,review_text,labels
+1,204668112,"The volitiles hunting  in broad daylight make it impossible  to step outside   without an immediate level 4 chase. The game is basically just running away while getting h it, in the back, until you're  dead",gameplay
+2,204918645,Not like 1 or 2. Most quests and dialogue make no sense and contradict what you were taught. Do not recommend this game expecally for 80$. even 10$ would be pushing it,story
+3,207411410,"This game, even at the simplest level, has no saves and limited player resources. What player resources it does have, even in the earlier stages of the game, are woefully inadequate to make this game fun or even playable, in my opinion. Had I known this prior to purchasing the game, I would never have purchased it. After 23 hours of playing this ""game"", I decided to shelf the game forever. If I could, I would ask for a refund of my purchase price and purchase a game that is much better designed and more interesting than this ""brick"".","content,price"
+4,205077165,For the amount of times that ive gotten stuck/glitched in a random spot on this game they need to add an unstuck option somewhere in the menu. Ive had to restart my game so many times because i would get stuck just exploring the world or even just looting a building.,bugs
+5,209093210,as of now coop and multiplayer is broken. every few seconds it desyncs from the host causing the missions to not progress. wasnt always like this but something changed.,bugs
+6,204937043,"Edit: Latest patch absolutely killed performance. Runs horrible now. 
 
-UPDATE WITH THE AIDEN BEAST BATTLE// WHAT IS THE FUCKING POINT OF ME LOTTING AND BUILDING UP ALL MY ITEMS TO TAKE EVERYTHING FROM ME BUT 3 FUCKING HEALTH PACKS AND A BAT. FUCK YOU TECHLAND",english,2025-10-16T02:42:01,negative,False,0,0,104.8,6289,True,False,False,872.0
-204861182,76561199010176129,6.5/10 chimeras was fun night was aids and scary nd fun missions felt lazy story was ehh near ending became lazy the last boss wasnt even fun it was just annoying wasnt hard just fucking boring the end scence was ass no big plot twist like dl2,english,2025-09-21T13:30:38,negative,False,0,0,20.2,1215,True,False,False,243.0
-204833330,76561198134499943,"Advertised as a successor to Dying Light 1, but actually just a worse version of Dying Light 2. So many outdated mechanics and baffling design choices. Forced hold-to-interact on the same button as hold-to-heal, so you use a healing item by accident half the time you're looting the dozens of zombie corpses which you must do one by one. Constantly getting stuck on invisible edges while moving, leading to getting grabbed for another forced 3 second QTE for the 50000 time. Don't worry though, once you break out of it another zombie will slide across the room to grab you again. No incentive to engage in combat because enemies give almost zero xp and melee is miserable with the constant insta grab from 360 degrees. Highest regret $60 purchase of the year for me.",english,2025-09-21T04:33:27,negative,False,4,0,26.6,1597,True,False,False,767.0
-214783191,76561199507916564,"The game is visually stunning with a 10/10 atmosphere beautiful lighting, great colors, clean design, and a strong contrast between tense, scary nights and relaxed daytime exploration. However, gameplay wise it quickly becomes mid. Enemies are repetitive and often just spammed everywhere, especially the annoying spitting enemy, and the Chimeras are pure copy-paste throughout the story, even being thrown at you in groups near the end just to fake difficulty. Quests are spread across the entire map, leading to constant running back and forth, while the car feels almost useless due to limited fuel and durability. Unlike Dying Light 1 and 2, there is no second map or new region, which makes the game feel even more repetitive. Despite being fun and well made overall, it feels like Dying Light 2 stripped down, as if you’re stuck playing only on the first map the entire time. Not worth $60 or even $47 on sale, even though you can still have a lot of fun with it.",english,2026-01-01T02:51:33,negative,False,3,0,26.5,1589,True,False,False,969.0
-207912973,76561198040365377,"DL the beast feels lazy compared to previous titles no matter what people say about it its not that good its just fine a big 6/10
+Beautiful parkour and graphics.
+Movement are too janky at alot of times.
 
-it feels empty, Characters are lame and a bore to listen to, not much parkour to go around for lots of open fields and forest. the story is generic and feels like a dlc, 
+DL1 Grapple hook just better..","performance,bugs,gameplay,graphics"
+7,208284106,"Coming from someone who played all other Dying light games this is by far the worst story of all of them, including DLC. It has incredibly unlikable characters, mid combat and a useless grappling hook. The bigger map just means you have to run around a ton between missions. Really disappointing...","story,gameplay,content"
+8,205105337,"I have played all the previous games and they have been great, however this one is very disappointing.
 
-The visuals are beautiful and thats all i can really say combat feels good but slower at times needs some balancing, volatiles are just everywhere and sees you from anywhere makes night time a chore more than anything and you get nothing really of value for playing at night time
+No fast travel and the grappling hook SUUUUCKS. The mods which require you to manually activate them are pretty dumb to. I have always played these games with two other friends and neither of them or I will ever use these mods.
 
-I guess i was expecting more from a FULL game title. 
+The brutal difficulty is good but mainly it just draws out boss fights and makes them very tedious. When killing the bosses to become ""stronger"", it never felt like you were. When using best mode the damage felt the same especially against bosses.
 
-TLDR: its a DLC not a game.",english,2025-10-29T23:33:20,negative,False,0,0,7.8,470,True,False,False,666.0
-204820964,76561198088611669,"""Good game, however, the parkour leaves much to be desired; it feels clunky and less fluid than in Dying Light 1 and 2. Combat is also much clumsier compared to the other entries in the series —one would expect more agility from someone infected by the virus—. In the end, it leaves a bad taste.",english,2025-09-21T00:35:19,negative,False,0,0,19.8,1187,True,False,False,295.0
-207511906,76561198327338474,this is a joke the game sucks i waited for this to come out money grab i want my money back,english,2025-10-25T04:44:19,negative,False,0,0,6.8,409,True,False,False,91.0
-206468312,76561197970179428,"I dunno... I got this game because it got praise when it came out. Even with it being basically a really long dlc I was excited because I loved the original. That being said, I don't know if its just me but I feel way more fustrated in this game. Its like its actively pushing me away. I dont know if its the systems or the new world but I find myself dying to stupid jumps and poorly telegraphed ledges. Things that look like I can grab and I cant. Things I should grab that blend in with the rest. I dont know. I dont think its the game itself, its how they set it up. Everytime I play I end up just putting it down and going elsewhere. Maybe on sale in the future? Maybe ill come back in a year after its been patched 100 times.",english,2025-10-11T19:56:32,negative,False,1,0,9.3,560,True,False,False,731.0
-204985022,76561197981126728,"The way people are talking in the reviews... I really thought this game was a return to form... It is not. Everything that made the first dying light great is lacking here. The controls are messy, the writing is subpar, and the combat feels worse then DL2. I'm not sure what you all are talking about. I wouldn't recommend this over DL2, and it's not nearly as good as DL1. I'd probably recommend this (barely), however I think it needs some negative scores to balance it out. Wait until it go's on sale if you're going to buy it, but it's meh at best.",english,2025-09-23T00:21:02,negative,False,0,0,45.8,2747,True,False,False,552.0
-205431570,76561199200990717,way less content and harder to play compared to the second gamew,english,2025-09-28T23:18:19,negative,False,0,0,6.8,409,True,True,False,64.0
-208468258,76561198340783744,"The game is OK but id wait for a sale, this game is nothing special compared to dying light 2 all you get is new crafting gear, a car and different map and kyle crane of course, kind of a let down i kept falling asleep",english,2025-11-05T12:43:51,negative,False,17,5,48.2,2894,True,False,False,218.0
-205777871,76561199222723392,"i played both 1 (about 1000 hours on my xbox) and 2 i can say that this is the most pathetic excuse of a dying light bugs everywhere i regret buying it if i could refund it i would but i cant it is unplayable dont buy it
+There is also a extreme lack of skill points and most of the ""beast skills"" are pretty useless and really only apply to killing normal infected, as the skills used on bosses do less damage then using your weapons. 
 
-",english,2025-10-03T17:02:29,negative,False,0,0,15.4,925,True,False,False,224.0
-205629575,76561197972758687,"As a Dying Light fan, I can’t get into DL2 or The Beast because the movement and combat feel clunky, unresponsive, and inconsistent. I’m constantly fighting the controls instead of the game, which ruins the core game play. Please bring back DL1’s movement mechanics!",english,2025-10-01T18:34:04,negative,False,0,0,3.9,231,True,False,False,266.0
-204635533,76561198030463932,"The same old dying light
-graphics look bit outdated
-they are selling a 2015 game add-on for a full price actually
-Dislike only cus of its price
-This is basically a 2015 game, 0 improvements
-yeah its fun to play but why bothering buying it if i can just play the first game?",english,2025-09-18T19:57:41,negative,False,10,17,1.7,104,True,False,False,273.0
-205361563,76561198037123133,"Just don't buy this one and play the original Dying Light, best way I can put it is it felt like Star Wars: Skeleton Crew......",english,2025-09-28T02:47:16,negative,False,2,2,29.4,1762,True,False,False,127.0
-204645320,76561199011307984,"Feels like Dying light 2.5 , Tried playing on HARD didn't liked the combat system . 
-I'll save my money on this game , sorry :(",english,2025-09-18T22:10:41,negative,False,0,0,1.9,114,True,False,False,127.0
-205445837,76561197984996507,"If you liked melee boss fights, this is your game. If you didn't, it's not.",english,2025-09-29T04:22:43,negative,False,1,0,0.8,45,True,False,False,75.0
-209709445,76561198066850118,kaikkea mahollista paskaa sitä tulee eläessään pelattua...,english,2025-11-20T19:29:00,negative,False,2,0,22.2,1334,True,False,False,58.0
-206434715,76561198123020203,"horrible melee combat with human being
-boring mission design
-annoying parkour
-repetitive map traverse
+Some pros are that the game looks really good and the weapons themselves are cool.
 
-beast mode is a gimmick
+We have completed the majority of the game on brutal difficulty, but at this point with out fast travel and the tedious and pointless boss fights we may just turn down the difficulty to complete the game sooner. 
 
-seriously this game is not worth 59.99
-just buy dying light 1 and you will have more fun
-",english,2025-10-11T13:52:46,negative,False,0,0,37.5,2253,True,False,False,217.0
-217558536,76561198974032642,"Open world is amazing, but the story? Never playing it again. Might be the worst pacing I have ever seen in a game... Running (more than a few times) from one side of the map, to the other side of the map. Yeah we have cars. But they're slower than walking speed... 
+If we could we would refund if it was still possible.","gameplay,content,graphics,price"
+9,204652449,"More girlbosses telling you what to do.
+You people must have a degradation fetish to keep playing these games.
 
-Even mission wise it's go here, kill zombies and fix this please now or help me! Ending each mission with a cheesy voice line. 
-I love dying light, but this was just annoying.",english,2026-02-04T14:40:23,negative,False,3,0,21.3,1279,True,False,False,443.0
-204940121,76561197988237658,"Falling under the texture: check
-Dying to some random box blocking your move: check
-Dying to pigeon spikes: check
-Killing the same zombies over and over and over and over out side the respawn: check
-Dumping all the weapons in favour of fists being the most reliable one: check
-Getting tired of opening 1001 boxes to get rags: check
-Loot despawning if you are not looking at it: check
-Zombies spawning in the spots you are not looking at: check
-Car exploding if you drive into puddle: check
+And why do the survivors of the Alps look like the kind of people you would find on the side of a street in New York?…",graphics
+10,208334142,Game crashes on the title screen. I've tried everything. I sometimes get it to work but about 80% of the time it crashes. My laptop is above and beyond what is required to play and ive reinstalled everything multiple times.,bugs
+11,204879561,"The game is mid, terrible shadows for crane the story is too short and feels rushed. There's literally no interaction with ""the beast"" besides the finale quest yet the game is saying it's made caster woods its hunting grounds? ""The beast"" is hardly even mentioned. You don't hunt chimera you just go on quests. 
 
-And so on and so forth. This game doesnt know what it wants to be. Tomb Rider? Assassin Creed? Days Gone? lets grab the worse mechanics from each and mash them together.",english,2025-09-22T13:17:38,negative,False,4,1,8.5,511,True,False,False,660.0
-205798582,76561197969601330,"Definitely the weakest of the Dying Light games to date.
+The story is mid, the map design is pretty bad, too many open areas with nothing to climb on. Even in beast mode you'll struggle to escape volatile chases in open areas.","story,content"
+12,204702096,"Best dlc for Dying Light 2!!!!! I'll wait till they announce dlc for The Beast, where we can watch and expirience how Aiden becomes a beast himself. And who didnt noticed what this game was about: Kyle, who was fighting the beast inside him, simbolically kills the man(baron), who showed his real identity as a monster(beast) to everyone, clears monster inside him and flee away into better future. 
 
-Campaign is pretty straight forward and linear.
+2.5 reused assets and ""new"" more than 20 climb anims(from dl2 ig) / 10 realistic and detailed parkour as in dl1","gameplay,content"
+13,217533952,"Honestly, big let down.
+the drop is quality from the last game is crazy
 
-Weapons all very samey and firearms are useless.
+Parkour is terrible. everything kills momentum. 
 
-New end game or New Game+ options.
+Skill tree is lame and linear. no choices to be made.
 
-Buy on a 50% sale but not really worth the full asking price.",english,2025-10-03T21:47:16,negative,False,3,1,41.9,2512,True,False,False,254.0
-208284106,76561198057388372,"Coming from someone who played all other Dying light games this is by far the worst story of all of them, including DLC. It has incredibly unlikable characters, mid combat and a useless grappling hook. The bigger map just means you have to run around a ton between missions. Really disappointing...",english,2025-11-03T02:52:34,negative,False,1,0,16.2,972,True,False,False,298.0
-204681247,76561198242496054,"Game seemed fun and I love the dismemberment physics, but it wont stop crashing in the first town area, no matter what I did. Hope they fix it, will buy it again in a few weeks!
+constantly losing grip while climbing and falling for no reason, randomly falling off ledges you are already holding onto.
 
-Crashing on - 13900k, RTX 4080, 32 Gb DDR6 6000 mhz, NVME (4k)",english,2025-09-19T10:47:20,negative,False,1,2,2.5,148,True,False,False,241.0
-204645279,76561198161385270,"Not worth with how long this took to come out Dying Light 2 was better than this starting out. Ill give it another go but based on boring start it will be on the back burner.
+respawning after death usually drops you in the middle of a horde with no ammo and you lose all of your XP.
 
-After playing a little more and seems like some things have been smoothed out some with movement and driving movement has improved a lot responding to were you are stirring still struggles with trying to do sharp turns fast. Still random crashes for no reason randomly no lag spike or buffer in fps could be standing in a doorway after killing a zombie and poof and have to clear the area again. 
+Walkie Talkie was a great idea. too bad they didn't use it and you still have to run back and forth to talk to people.
 
-It is fun but recommending it for any one that hasn't followed the game unlikely because of how the story plays out in dying light. For player that have played dying light and want to see where the story goes give it a shot wait for winter sale.",english,2025-09-18T22:09:52,negative,False,0,0,10.2,611,True,False,False,819.0
-211610855,76561198047638083,"The more I play, the more grading this game gets. 
+This feels like a bad port",gameplay
+14,210668924,Game doesn't allow you to alt tab onto other monitors to use. Hijacks your computer when its running. Can't deal with that in 2025.,gameplay
+15,204672402,"9/21/25 edit: The only partial fix I have is to run it on D3D11 instead of D3D12, and disable Asynchronus Compute. Still, in cutscenes, its a 50/50 chance to crash but it didnt happen during normal gameplay at least. Still incredibly frustrating and I cant play (and reccomend this) due to these problems. 
 
->Crane go to this place for this super important item.
->Oh no, theres volitile, be sneaky
->Oh no, something has alerted them
->Oh no, run out fast
+9/20/25 edit: Completely wiped all previous drivers via DDU and fresh installed the latest drivers intended for this game (AMD Adrenalin v25.9.2) but it still happens, if anything it happens more often. I cannot play this game because of it anymore, it just crashes every 3-5 minutes now, which sucks because I'm really enjoying it.
 
-The story and quest variety is just kinda shit, when all i want to do is the good part of the game which is bonk zombies which is fun, if they didnt grab me all the time.
+Im not that far, but im enjoying it so far. Note to those with AMD GPU's: im rocking a 9800x3d and a 7900xtx, and the game just randomly crashes. No warning or anything, it'll just freeze and keep playing audio for 5 seconds, black screen on all my monitors, then crash. No common demoninator in what I do, I'm not maxing out my GPU or anything (only 75-85% usage) or my cpu either (70% at most), not PSU related either. Hope they patch it or something cause otherwise its almost unplayable for me.","bugs,story,gameplay,content,audio"
+16,209560256,Game series has great movement and parkour mechanics. Set it in a map where the few buildings there actually are are designed to make parkour awkward and fill the rest with big open spaces where you can't use movement at all,"gameplay,content"
+17,204640465,"Game has the same problems as ""Dying Light 2"" without full support for ultrawide 21.9 3440x1440, ""MENUS"" ""HUD"" LOCKED AT 16x9 which is very bad and does not bring a good experience for those who want to take full advantage of their monitor, I hope Techland fixes this in DLTB and DL2 one day, this game is not fully optimizedand I needed to turn on DLSS + FRAME GENERATION to reach a stable 120 FPS on an RTX 4070Ti, R7 5800x3D, 32GBs, I will come back here to change and update my analysis as the ""UPGRADES"" arrive to the game, for now I recommend waiting to buy, as it has become practice in the gaming industry to release with problems and then fix them later, Techland is to be congratulated for the release of ""Dying Light The Beast"" but they need to fix these problems.
 
-Also the bosses are just generic and annoying",english,2025-11-29T11:10:19,negative,False,0,0,21.2,1274,True,False,False,416.0
-204677879,76561198043865562,"I got suckered into buying the Ultimate Edition of DL2 and got this for free, and I still want a refund.",english,2025-09-19T09:25:43,negative,False,1,0,2.6,156,True,True,False,104.0
-213665684,76561198265796784,"Even after 3 major patches, the developer still hasn't bothered to add:
-- Fast travel
-- Any reason to play at night
-- A point to Volatiles existence
-Seriously?",english,2025-12-19T20:05:44,negative,False,8,0,71.3,4278,True,False,False,159.0
-209648822,76561199153025089,"Game unsatisfying, plot horribly boring, parkour mechanics cool, just like previous games, but most of the time you run around empty fields. Fight mechanics implemented better in the game, but very little interesting fights regarding enemy placing. Night just useless in overall progression. All in all, it's like really cheap copy of previous games.",english,2025-11-19T22:17:20,negative,False,3,1,30.0,1800,True,False,False,350.0
-205294220,76561198332952240,"Combat and parkour in Dying Light 1 was so much more consistent. Many of the combat and parkour abilities in this game have no consistency to them. Sometimes attacks will even just not register at all. Once in a while, a zombie in an idle animation will just be immune to drop kicks or a ground pound won't do so much as stagger enemies that are right next to the AoE. All these unreliable moves just makes the game immensely frustrating.
+*Another annoying thing is that every time I open the game, even with ""single player"" mode on and ""COOP"" off, it opens the Epic Games website twice trying to force me to create or link an account on the Epic Games Store.
 
-Play Dying Light 1 instead. The abilities in game actually work consistently at least.",english,2025-09-27T08:21:57,negative,False,0,0,12.0,718,True,False,False,528.0
-212417544,76561198073225943,"Cannot recommend this game with how spammy the zombies are, you're unable to play the game without getting perma grab spammed the whole time",english,2025-12-02T17:57:26,negative,False,1,0,16.7,1002,True,False,False,140.0
-204854961,76561197970772311,"Grappling hook zombies with a 10m reach linked to a QTE. In comparison, the leg strike can't reach half of that distance. I feel like I'm playing with a average sized Tyrion Lannister that had his torso lengthened but his legs remained the same size.
+""Menu LOCKED IN 16x9"". 
+https://steamcommunity.com/sharedfiles/filedetails/?id=3570456036
 
-You're done if you try to sprint around them, the game calculates an intercept from a mile away and launches the QTE. The same lame issue in every single one of their games. 
+""Config LOCKED IN 16x9"". 
+https://steamcommunity.com/sharedfiles/filedetails/?id=3570456149
 
-Theyre still unable to give PC players 1-4 keyboard assigns for weapons. Instead they keep pushing the console weapon wheel, uninmersive and proof of lack of interest in KBM gaming: how peasantly and greedy.
+""HUD LOCKED IN 16x9"". 
+https://steamcommunity.com/sharedfiles/filedetails/?id=3570456377
 
-Another Ubisoft style game: new maps same old ""climb towers to free zone lol"". Genius. For premium price ofc.
+""CUTSCENES"" Confirmed 21.9. 
+https://steamcommunity.com/sharedfiles/filedetails/?id=3571030906
 
-The lack of imagination and QC for KBM PC platforms is crazy. And way, wayyy too expensive for so many reused assets. I regret this purchase at this price.",english,2025-09-21T11:43:47,negative,False,3,1,3.5,213,True,False,False,903.0
-213026495,76561198911306141,"Spanning 3 games this series has only seem to continue to fall from grace. I remember a point when seeing Techland in the of the development meant it was going to be great. After the completion of The Beast and Dying Light 2 im left disappointed. The Dying Light games after the 1st fail to meet the charm of the original. The copy and paste of animations, Reskins of monsters/zombies, repeated environments. Missing Features and functions the original had in substitute for a subpar ""Beast Mode"". No functioning grapple, horrible vehicles, awful stamina system. This game left a lot to be desired.",english,2025-12-11T05:17:24,negative,False,1,0,50.9,3054,True,False,False,598.0
-209166820,76561197971109079,"No innovations since the last game. I knew the story would be trash, it's not what the series is known for, but it seems SBI is in full control here. Maybe they could actually play test this bug ridden game. I mean you didn't really change the play mechanics at all, so how did you make it so much worse?",english,2025-11-14T03:53:18,negative,False,1,0,56.8,3405,True,False,False,304.0
-207922297,76561199028411634,"story is honestly atrocious. very few side missions, boring characters, and the map is waaaay less iconic than Harran. and feels way smaller too",english,2025-10-30T02:18:00,negative,False,1,0,29.9,1796,True,False,False,144.0
-209016571,76561199283199002,"Total dissappointment for DL fans. Only play if you are aching for a dying light game or never played DL. Graphics 8/10, Arts/8/10, story:0/10, gameplay: 3/10.",english,2025-11-12T09:21:52,negative,False,0,0,27.3,1636,True,False,False,159.0
-204914213,76561199102511708,Liked the story. Would recommend you waiting for a sale as the game is short. I preferred dying light 2 over this as there was a lot more to do.,english,2025-09-22T02:30:50,negative,False,0,0,20.2,1215,True,False,False,144.0
-204670762,76561198825573671,"CONTROLS ON GAMEPAD ARE HORRIBLE, HOW IS SQUARE FOR COMBAT AND MEDS, NOW I PUSH ZOMBIES AND HEAL ALL AT ONCE? AND NO WAY TO REMAP THEM AT ALL. BIG LOSE FOR THIS DEV TEAM. FIRST THE GAME COMES OUT AND THEY HAVE TO CHANGE SO MUCH STUFF IT FEELS LIKE A BETA, AND EVEN IF I WAIT A WHILE FOR IT TO BE AT LEAST A MINIMUM PATCHED I STILL HAVE TO DEAL WITH THAT BULLSH*T. LAST GAME IM BUYING FROM THEM. ILL STICK TO THE ORIGINAL DYING LIGHT BECAUSE OBVIOUSLY THERE'S NO SEQUEL THAT'LL EVER GET CLOSE TO IT. THE WHOLE GAME ALSO FEELS LIKE ITS JUST A CHEAPER THE FOLLOWING DLC, GREASY BUSINESS TURNING THIS INTO A STANDALONE.",english,2025-09-19T06:23:10,negative,False,0,0,15.0,902,True,False,False,615.0
-206540022,76561199065753500,"Game is extremely buggy, textures are terrible (ex. Olivia and the Sheriff's hair glued into her face, Lydia's jacket, etc.)",english,2025-10-12T13:57:07,negative,False,0,1,40.1,2409,True,False,False,124.0
-206430028,76561198101087707,This game is pissing me off with its f-ing cables mechanic,english,2025-10-11T12:48:43,negative,False,0,0,3.0,180,True,False,False,58.0
-208498374,76561197999410392,"I enjoyed certain parts of it but there it is lacking any sort of identity. It feel like a more watered down version of DL 1 & 2 which isn't exactly a bad thing. I would like to say i would recommend this game but the ""Parkour"" is soooooo frustrating. The number of times i just randomly duck under something and get hit or randomly dodge off an edge, Grab onto random objects when im just trying to jump, or when i randomly jump up in the air 100ft just really takes away the feel of the game.
+[h3]Information updated on 09/19/2025[/h3]
 
-if the clunky and buggy controls are polished i would have no issue changing my review to a positive one but in its current state and the price I paid, I had higher expectations for the 3rd installment.",english,2025-11-05T20:08:05,negative,False,0,0,19.2,1154,True,False,False,698.0
-204635018,76561198278159801,"Wanted to love it, but for now cannot recommend due to graphical issues:
+nothing","performance,bugs,story,gameplay"
+18,206348925,"I want to like the BEAST however it's VERY underwhelming. The only thing new really is the map while everything else feels like a down grade from previous games such as combat and driving. For what was originally intended as a DLC for DL2 and ""evolved"" into it's own game, is mind-blowing for how underwhelming the game really is. I'm not sure how this game scored so high TBH.","gameplay,content"
+19,207152842,"parkour feels atrocious. the progression has downgraded every game we went form 3 skill trees to 2 to 1 that lies to you its 2
+the map doesnt have a layout that helps at all with parkour volatile chases are fucked the second you get spotted there are littlery 7 volatiles now and becasue the parkours terrible out running them suck
+","gameplay,content"
+20,204823916,"Ok I got past the controller but what the hell is this / The skill tree is smaller than in Gluttony 2 and I mean I unlocked all the skills in 6 hours in the game and when you said the main mep was huge, I felt bigger in Dyinglitgh 2 because it was pretty big as an area, as if you have to be at least LV to use the weapons, I mean am I going to throw my weapon at someone and they'll upgrade? The reason people liked 1 was because they shared the weapons, LV difference or not / The most ridiculous thing is that just because I slept in a low LV place for a day, the LV shouldn't reach the same level as me (Assassin's Creed) do you mean in the previous games it wasn't big and the mep had LV and was fixed, I mean bring the areas to the same level as me all night place but the zombies in the outside area, why do they also evolve when I LV up","bugs,gameplay,content"
+21,208092593,"Overrated and a downgrade compared to previous games.
 
-Game is so fucking bright in outside areas that it literally hurts my eyes. Tried scaling down HDR settings, tried turning it off - same shit. For now unplayable.",english,2025-09-18T19:50:34,negative,False,2,1,1.6,98,True,False,False,236.0
-205699533,76561198274528194,Had a lot of fun but it lost the 'dying light' touch. The parkour pretty much sucks and you're slow af. Glorified assassins creed. Not worth the price.,english,2025-10-02T17:24:24,negative,False,0,1,23.8,1428,True,False,False,151.0
-205297978,76561197993878098,"This is a very bad game
+Pros:
+- It's still a Dying Light game, if you liked the previous games you'll be OK with this one.
 
-I wanted to refund it after the tutorial but thought it might be better in co-op. I was wrong
+Neutral:
+- Story.  Mid, I've seen worse.
+- Side quests / activities.  Most are just busy work but I wouldn't complain.
 
-It’s a boring, drawn-out cash grab. Most of the time you just run across fields. You run, not parkour, because the quest is given in the top right corner of the map and the objective is in the opposite corner. There’s no fast travel, the car is slower than running. Fighting zombies is dull button-mashing with zero stamina and endless grabs. Optimization is terrible, bugs from the previous part are still here, graphics are mediocre. The story is decent if you skip all the dialogues
+Cons:
+- No fast travel.  Wasting a half of my time to traverse the map isn't a gameplay, just artificial padding that doesn't value player's time.
+- Zombie models are very limited, it's the same 6-7 clones everywhere.
+- They made the nights practically unplayable in this sequel, there are volatiles everywhere.  The only logical thing to do is sleep.
+- Resources are too scarce, you have to loot every corpse and do Dark Zones on a regular basis to keep up.  I don't remember such issue in previous games.
+- Parkour is underwhelming, I remember it being better in old games.
+- Car driving and related mechanics also suck.
+- No ray tracing at time of writing this despite the promises (a month and a half after release).
+- No New Game+ at time of writing this despite the promises (a month and a half after release).
+- HDR sucks, it's overblown and loses details compared to SDR.  I had to use RenoDX mod to tone down the overblown mess.
 
-Boss fights deserve a special award — they’re just awful. Ten minutes of hitting the same damage sponges with no interesting mechanics. And to make it worse, at the end they throw two sponges at you at once
+Most of the time it feels like a chore, not fun and I'm not sure I'm going to finish it.
 
-Better to rerun 1st game",english,2025-09-27T09:40:19,negative,False,3,2,23.0,1379,True,False,False,839.0
-207341301,76561199580520922,I love the game I beat it it's fun feels like the first game but.. I like my games that don't run at 9 to 14 FPS.,english,2025-10-22T23:13:58,negative,False,0,1,16.5,988,True,False,False,113.0
-212369032,76561198016656570,Seemed like a nice game but co-op after 1.4 is broken. Can't join any game and i'm thrown into single player instead.,english,2025-12-01T23:54:16,negative,False,3,0,15.6,933,True,False,False,117.0
-205213941,76561199028420603,"its not worth full price, you spend most the time running in open fields, it still rains inside buildings, some achievements aren't popping, no new game+ or legend tree, driving is clunky and not very good, constant constant constant zombie grapples, kicks 1 hit zombies if you're on uneven ground, it's not even worth half the price",english,2025-09-26T06:10:30,negative,False,1,0,25.6,1535,True,False,False,333.0
-205209438,76561198289373223,"Its just dying light 2 with a crane skin and less map/s really not worth $60 dollars(full game price). This should of been a DLC to the 2nd game and priced at $40. I just can't recommend this game as a full game just wait for a sale.
- 5/10 for it being priced as a ""full standalone game"", i would of gave it a 7/10 as a DLC for dying light 2.",english,2025-09-26T04:22:04,negative,False,2,0,18.4,1102,True,False,False,342.0
-209534842,76561198819612497,"daddy techland didnt want to gift me the game for free and i had to buy it, 10/10 gameplay, dont recomend",english,2025-11-18T12:25:29,negative,False,0,1,18.6,1117,True,False,False,105.0
-204659303,76561198043941722,"dont.
+If you still want to buy it, wait a few months until they add RT and NG+ and buy it on sale.","bugs,story,gameplay,content,price"
+22,205995099,"This game is alright, but there are major issues with the gameplay.
+1)The stealth system is broken. Why do I get spotted in the dark by random person that's far away? It makes no sense at all, and it not only breaks immersion but it's infuriating because it alerts the enemies in the entire area that close in on you in seconds.
+2)The combat is still shit, like DL2's. What made Techland think the DL2 combat system was ever good and decide to implement it into The Beast? DL1 had a much better combat system, with hits still landing even when the enemy dodges because they don't properly dodge, unlike DL2 and The Beast where I have to swing like a maniac to get a few good hits in, but they keep dodging and wasting my stamina and my weapon is dogshit so it won't hurt them.
+3) The skill tree is also bad, why is it so basic and not unique? Why can't I level up my one-handed or two-handed skills? Oh ya, that's because they don't exist and it doesn't matter which weapon you use because it doesn't matter, you can't main any weapon type because all that matters is the rarity of it and that makes using weapons feel like a hassle, because if I use a rare or lesser weapon, I can't kill enemies fast enough, I shouldn't have to look for epic weapons to be able to play the game properly.
 
-performance is worse than dying light 2. how they managed this ill never know. i get more stable frames in BL4.
+There's a lot more issues, that I'm not surprised Techland never saw, because they don't test the game properly or have any actual consumer feedback.","bugs,gameplay,graphics"
+23,204645695,"Co-op players dont have the same day/night cycle or sometimes it just breaks entirely for one player, character foot placement feels off and glitchy (acting like youre on the edge of something when youre not or vice versa). Maybe it will improve but i cant recommend this right now","bugs,story"
+24,212174392,"This was a good course correction after laughable Dying Light 2 story. But when it comes to the gameplay, at least 1/3 of the game I was [u]wasting[/u] on traversing from one corner of the map to another between missions. There are no small outposts with merchants on the level so if you want to stock up on resources you have to run or drive from 1 corner to another.
 
-gameplay wise it is great, but when you hit a zee and the game drops 50fps... should have set my expectations far lower for techland.
+The map is a huge downgrade from DL1. The only major city has tall buildings which is not as fun to navigate as the 1 story Haran favellas. A good third of the map is an open field than you have to run through or drive if you are lucky to have a car nearby. The map is much smaller than DL1.
 
-wait till its on sale, game is NOT worth the price tag.",english,2025-09-19T02:18:51,negative,False,3,0,1.4,85,True,True,False,310.0
+Far less zombies than in DL1 and there are far fewer agressive runner zombies. The campaign is ok. Cringey James Bond-style villain and a few cool moments that set you the player on the road of revenge. But it felt like an extended tutorial that tries to slowly sell mechanics over each mission, rather than a story than integrates you into the world of the game. I don't remember DL1 campaign to be that tacked on. Oh and it's quite short too.
+
+Overall, it's just ok. Not bad but not a breakthrough either. Get it on sale if you crave more Dying Light 1 experience.","performance,story,gameplay,content,price"
+25,205380378,"Sadly, this game, like Dying Light 2 is terrible for anyone in the slightest affected by motion sickness.
+The FOV is terribly low (50's default, 77 max), and the motion sickness reduction setting exaggarates headbob to the point where you'd think Kyle's head was on a loose spring as you walk.
+
+Besides that, if you turn the camera to the sides, the entire room will tilt before correcting itself.
+This is supposed to add to ""realism"", but I don't do this in real life.. Do you?
+
+The usual tricks have been tried; like using the accessibility setting in question, maxing the FoV, fidlding around with settings...
+
+The real gem in all of this? I am typically not affected by motion sickness issues in games, but this one got me bad.",bugs
+26,213531015,As of patch 1.5 it is a tedious xp slog that is absolutely not worth it. You are not allowed to farm for xp as Volatiles no longer give xp. They expect you to spend hundreds if not thousands of hours to unlock all of the legends levels. They succeeded in making this game worse then VMB 2.,"bugs,content,price"
+27,205418046,"Was great, but now stutters like F@~k after the last patch, like every 10th frame, can't play it like this.
+Uninstalled and re-installed, deleted shader cache etc.
+They just plain broke it for me
+I9, 4080 super 32 GB DDR5 RAM, was running like butter now like cr4p, wouldn't recommend as is.
+Yeah yeah, I'm sure it works fine for some, but no other games are effected and it was fine before the patch","performance,bugs"
+28,214358109,"BUGGY VOICES / HEARING OTHER PEOPLE'S GAME??!!
+
+I've been a huge fan of this franchise since it was first released, so as you can image I was hyped for Kyle's return. 
+That being said I played this on release and found almost every time I played a mission that was indoors I could hear strange sounds almost like I could hear somebody else's mic? Except I keep my sessions private and voice chat off? 
+It was borderline tolerable for a while until at one point I literally started hearing someone's baby crying (Loudly).
+As well as being able to hear dialogue from somebody else's session which not only is really strange but also huge spoilers. From keyboard noises to voices then whole family shenanigans through the game audio made me think I was going crazy. 
+I left the game a while to hope it got fixed at some point but after coming back today I'm pretty bummed to see it hasn't and the issue seems to be something ongoing since early Dying Light 2.
+
+I'm not sure how it is even possible to be hearing other people's in game audio and mics but it's enough to make me not want to play the game as it completely ruins the immersion of what I can imagine would be a fantastic game. 
+
+Hopefully this gets fixed soon.","bugs,story,audio"
+29,205371534,"Has the worst city traversal in the series, its literally better to just get the dash skill and run everywhere because the trucks are more fragile than you and the actual parkour sucks. Wanna make a jump from one level of the city to another? Well you a very specific building that the one your on doesnt path to it so you either backtrack for a minute or spend the minute climbing up from ground floor.
+
+Using your bare hands is significantly more effective than any other weapon unless you are overleveled for an area. It seemingly always takes 5-6 punches to kill a zombie in an area of equal level, and almost always 5 hits with any weapon despite the damage numbers sometimes more, but your fists generate more of your Beast Mode bar with each hit by a significant amount.
+
+Speaking of Beast Mode, its great and i love it but building the bar is so fucking stupid. I build the bar up right before the Mist chimera fight, but logged off as it was already late. When i logged back in in i had no bar. You lose your bar on quitting to the main menu, dying, and resting.
+
+OH AND THE MAP! TECHLAND WHAT THE DID YOU DO?!?!?! WHO DESIGNS A MAP LIKE THAT!??!?! ARE YOU INCOMPETENT?!?! WHY ON GODS GREEN EARTH IS NORTH THE BOTTOM RIGHT?!?!?!?! ARE YOU DUMB??!?!?
+
+Anyways, the game is like a 3/10, 4/10 on a day im feeling more generous. Uninstalling and returning to Dying Light or Dying Light 2, whichever my friends want to play.","gameplay,content"
+30,204896013,"40 hrs, no end game content, no pilgrim outpost challenges, and bugs.  Changed my mind a great story but the parkour feels slow.  The vehicles blow up as soon as you hit a zombie making the only repeatable quest garbage.  for 7 more gigs you can play Dying light 2 with better features.","performance,bugs,story,gameplay,content"
+31,204725489,"They should rename this game ""Grabbing Light"" because you spend 90% of your fighting with the zombies getting magneto grabbed from a mile away. These zombies were trained by Jeffrey Epstein himself on how to violate your personal space.",gameplay
+32,204742969,"Just DLC for 60€.
+
+Craine story finally continues, but..
+
+There are almost no skills.
+Skill tree Is just random placed mess.
+No combat and Parkour XP.
+Looting same places over and over again.
+Map Is small and still you will be running alot bcs there is no fast travel to make more gameplay i just guess, it would be nice collect atsleast some XP on the way.
+Only way how to get nice XP to finally have some HP and Stamina Is to do missions.
+Story is good, graphic looks like DL1 but it runs lot worse, faces are finally well made and NPCs looks and behave like humans.
+Soundtrack Is god tier. 
+
+Would be lot better with XP and skill tree rework.
+
+Sadly this Is just DLC with 4 years of delays, not worth 60€, 40€ Is much better Price for this, atleast i got finally something what i paid for 4 years ago.","story,gameplay,content,graphics,audio,price"
+33,205708713,"they never captured the magic of the first game again. every release is just more of the same with meaningless changes. 0 creativity. i think part of why they never could get the sequels right is because they are too slow to change, or evolve the gameplay. it´s like they punt every single swing. never going for the homerun. its predictable and has become dull. 
+
+the magic has faded
+
+buy on sale if it´s your first time with the IP. otherwise not worth.","performance,gameplay,price"
+34,206297820,"Honestly, this game feels super rushed and empty. The story is way too short, the missions are repetitive, and there’s barely anything to do once you finish it. I’ve been a huge Dying Light fan since the first game — and honestly, the first one was miles better than this and even the second one. You’d think by now they’d know exactly what makes this series special, but it feels like they didn’t put the same heart into it.
+
+
+
+The ‘Beast’ transformation sounded like an epic feature, but it turned out to be a major disappointment — more of a gimmick than real gameplay. Going out at night? Completely pointless. Those monsters are absurdly strong even when you’re maxed out at level 15, and you can barely take one down without wasting everything you’ve got.
+
+
+
+I was hyped at the start, but the excitement died fast. It just feels like a missed opportunity. For a franchise this loved, we deserved better. They should’ve taken their time and made something truly amazing, not this half-finished experience.","story,gameplay,content,audio"
+35,205380750,"I do like the game somewhat. Just the map is trouble for what is it is meant to be. Dying light to me, is the parkour zombie game and the Map alone doesn't let it be that. it's so open and nothing really around it. You have one ""City"" Part and that's it and houses are so spread out that you can't freely just jump around to avoid zombies, so you're better just running up the road to avoid them. 
+
+The combat is a Muh at best. the weapons just don't have a good feeling to them. I don't know if it's just me but it feels like every weapon i get has a sponge attached to end of it. 
+
+It's not a bad game, but it's not a great game. Whole game should just been a DLC at best.","gameplay,content"
+36,208939296,If you're playing on the Ally X or the xbox version of the ally x don't buy this game as it lags and has poor response and steam does not care that the game freezes and crashes when you try to play it once that run time passes 2hours they say oh well not there problem sucker and you are stuck with a game that doesn't work on the hand held even if you meet the requirements,"performance,bugs,content"
+37,212465504,"I really love the Dying Light Franchise, but this game just doesn't feel as good as DL1 or DL2. 
+
+Pros:
+-Gore is maxed. you can literally split a head open and see the brain.
+-Beast mechanic is interesting as a new concept
+-Voice lines are very imersive
+
+Misc: 
+-Driving cars, which I think is new, but honestly isnt super enjoyable. Only benefit is not having to run across open spaces, but rooftops are still best.
+
+Cons:
+-Night is un-playable. The darkness is turned up to 12, so you cannot see anything at all without your light. Volatiles are literally everywhere and if you get more than 1-2 you cannot kill them before you die.
+-Parkour does not feel as smooth as DL2 (imo) and things that look grabable sometimes arent. Also the combat roll before hitting the ground works about 1/3rd of the time. Especially if you end up falling close to a wall.
+-Quests are far and few. I have gotten about 6 quests in the 7hrs of playtime. Not to mention the area levels which place barriers to how you can get around. 
+-Hitting enemies is rough. If they get too close, you lose the animation and get grappled or hit. If you try to hit them from further back, they either dodge or it misses. 
+
+TL:DR 
+I really wanted to enjoy this game, but it just doesn't feel as good as DL2. Buy it on sale and try it out, but if you have DL2, I would play that instead.","gameplay,graphics,audio,price"
+38,206322333,"Sorry but I got this free due to buying DL2 ultimate edition - so in a way, yes I did pay for it. I would certainly not buy this even at half the price due to all the bugs - I would have refunded it if I had purchased as it was NOT ready for release.
+
+Official launching with Night/day cycle broken so daytime on your screen is actually night and you get chased.
+Rain going inside buildings. 
+Game crashing preventing people even playing.
+Raytracing removed?
+ 
+Zombies literally spawn/pop into existence infront of you. Kill one, turn around and another appears. Clear the area - o wait another literally materialises on screen. Then beside him another spawns. Volatiles running to where you are on the map even when you stand perfectly still then lurking and reuse to move out of their ""zone"" not scary, just annoying... How hard was it just to use the same setup from DL one and have another decent game? removing parkour stamina from a game that barely has room to freerun? errr yeah okay.
+
+Look I'm enjoying it now but it is in no way shape or form worth the asking price, They had a working recipe from DL1, broke that in DL2 and tried to redeem it in DL the beast but fell short and felt like alot of assets were removed prelaunch due to other bugs. It feels empty in a way that screams lazy, not post apocalyptic. 
+
+","bugs,gameplay,content,graphics,price"
+39,212940948,"Played a save for 8 hours then at some point everytime I loaded in I immediatly died and can't do anything about it, meaning I am stuck in a constant loop of respawning and then dying. I can rollback the save but that would make me lose half of my progress. The game is fun but not fun enough to replay half of my progress because of a stupid bug","bugs,content"
+40,204669187,"I would say Krane built like in full-steriods DILF, very tuff enemies in brutal mode, and a lot of grind-in mining loot stuff. However, its best not to play by now because of the rain bug. Both day and night, literally just rain in my screen even indoors as well. So, they need to figure it out the bugs and issues in future reference. Its best not to play now but later. Save your money for this later but this game is radical. Just the bugs is the problem.","bugs,price"
+41,206404041,"7/10: Story & Side Quest 
+25 hours story content for 60 dollars cannot be justified. Furthermore, if you had bought Dying Light 2 previously, even for the standard price. This is a Dying Light 2 DLC that justifies 30-40 dollars max for Dying Light 2 owners.
+
+7/10: Coop Experience - performance issues. I had no problems when playing Solo Campaign Story. My FPS fluctuates between 80 to 8 FPS when switching to cutscenes. 
+
+Nonetheless, it is a good step for the direction of the franchise. However, it still cannot beat the first game Dying Light ambiance, music and performance.","performance,bugs,story,content,audio,price"
+42,209989432, *Cutscene* Written *Cutscene* by *Cutscene* colored *Cutscene* hair *Cutscene* feminists *Cutscene*,story
+43,209748597,"Less than 4 hours in and I've already had to relaunch the game twice due to getting stuck. Can I walk over a pile of rubbish without glitching into it Techland? This review may change, but two game breaking bugs in ~4 hours puts it squarely in ""can't recommend"" territory.","bugs,content"
+44,204739117,"It seems like a step backwards from dying light 2. Combat boils down to: kill spitters on high ground, grind down the horde with either consumables or beast mode, then grind the big one away if there is one. The dark zones do have loot, but most of that loot I could go without. Sure I'm helping the survivors, but beyond the traps sprinkled around and the shop they aren't that much help. Haven't made it to the grappling hook yet, but from what I've seen it's not that impactful. Now compare that to my review of dying light 2 and tell me this is worth $60.","gameplay,price"
+45,205243377,"Dissappointed, actually can;t believe how much i hoped for this to be good, but its just to short and copy paste from the second, and its actualy in a worse state, parkour is worse, feel isnt there as it was with the DL and DL2, the story is legit the same just without the sister part in DL2, but i guess Kyle Crane WOO HOO, the game is okay, but as a 30-40% dlc, not as a standalone. Say waht you want, but the game didn't deliver whait was supposed to!","story,gameplay,content"
+46,211206722,"Прикольно, но вообще не стоит своих денег. Видно, что изначально должна была быть лишь дополнением, так что покупать сейчас вообще не стоит",gameplay
+47,207040840,"Im a big fan of the Dying Light series. DL1 is still the best version of this game to come out. Everything about that game felt... good. When DL2 released- it ran like crap, many glitches, and horrible balancing... buy hey! At least the gliding was cool! DLTB felt clunky and unbalanced like DL2. 99% of the parkour experienced in this game was just climbing rock walls. Aiming with guns is trash (so i only really used the shotgun which is great)... loot gained from side quests and darkzones made little impact on game play (leveling up was more so to keep up with the increasing difficulty of the game and no point did I ever feel... strong. Enemies take too many hits). Would have so much money and no idea what to spend it on, so I would just buy all ammo and crafting supplies from vendors. Skill points and Beast Mode are gimmicks, vs bosses they do very little and against a small group of zombies, you'll see yourself taking more damage than what you gain. There wasn't a single aspect to thing game that I felt it did well. I can rant more but I will stop here. Do yourself a favor and just play DL1, do the DLC, and then go to the community workshop and add mods.","bugs,gameplay,content,price"
+48,209126199,"This game is only barely afloat due to its parkour and gore system in my book. The story in general was so mid, cliche, and lazily done i actually got angry several times. Play it only for the game-play and do not expect a decent story. 
+Even then i liked the first games parkour ten times better as well as how the flow works, and just in general really.","story,gameplay"
+49,204634748,Basically Dying Light 2 DLC. Not what I expected and not a fan of whatever this is or was. Trailer is not true to itself,content
+50,213745273,only reason i think this is even partially good is the fact that crane is here otherwise just fucking play dying light 2 its so much better with the parkour,gameplay
+51,204839812,"5/10 never been more angry at a waste of 60$. no Tripple A game main story should be 15-20 hours. let alone NO new game plus NO nightmare mode the smallest map we have ever gotten with the least amount of NEW skills we have seen in any of their games and yes i know these things were not base game for prev dying lights i do not care this is the 3rd game and they are seasoned devs theres 0 excuses w there budget . even the beast from dying light one you invade ppl as has better and more unique skills in the game . hell the dlc ""the following "" gave me more content then the entirety of dying light the beast. PLEASE give me my money back because holy sht i got robbed","story,gameplay,content,price"
+52,204971262,"Glorified dlc very repetitive uneven paced not worth 60 bucks.
+Performance is fine but it also looks like something you'd see 5 years ago 
+map is a boring location imo
+Repetitive dragged out ubisoft quests with repetitive bosses , difficulty balance for harder ones don't make any sense 
+you'd *PARKOUR* accross the map but then you'd have to hammer a zombie 15 times , rooms where you just have to loot for 10 mins,
+ i don't like the pacing me personally. 
+The animation lock when zombie grabs while running is extremely frustrating.  
+","performance,gameplay,content,graphics,price"
+53,204865262,"SStill too fucking grabby, how can they not fix this shit on launch, they really dont learn do they",bugs
+54,205287676,"The biggest flaw of this game is the weapon durability mechanic.  Seriously, this is a much hated, outdated mechanic, yet it's still here.  Metal knives and weapons break apart with very little kills, resulting in seriously hampered gameplay.  It's even worse than the Breath of the Wild durability LOL.  For this reason alone, I can't recommend this game.  
+
+The save system also needs to be reworked... why can you only save at certain points?  It would be nice to be able to save more often so you don't have to repeat long stretches in case of death.
+
+Still needs to be reworked.  Hopefully adjustments are made.  But as of now, it's not so fun to play.",gameplay
+55,212478450,"So i've played this game, and to be honest, just play the first dying light. To be quite honest this game didn't really hit me like dying light 1 or 2, both of those are fun for me i just i don't know this game was disappointing to me, The beast mode is just, eh, cool finishers that's about it, and it barley lasted long, i still prefer dead island 2 fury mode anyways. and the story, is just ok, just get the first game there's more stuff to do in that game",story
+56,211772546,"My impression 4hours in and I am not going to finish... 
+3rd game and Combat still feels bad, parkour feels magnetic and clunky, driving horrendous.
+Maybe I'am just tired of the same thing over and over, almost like Far cry, same same but different.
+Atleast they removed the paraglider from the 2nd game (which ruined the whole feel of the game imo)
+
+Leveling has been downgraded tho, no longer survival, agility and combat, just one EXP Bar, which I personally wish they didn't go for. Loved how it was in the first game. 
+
+If you're looking for Dying light 1 this is for you.
+Don't expect much improvement.
+","gameplay,content,graphics"
+57,205121269,"I really love the game and I think it's a lot of fun so far, but until they remove the Epic games login prompt every time I open the game, I will sadly leave this negative, it's super annoying that it pops up several times",gameplay
+58,205294540,"The combat is floaty and unsatisfying, things grab you left and right without the parry mechanic working properly. The guns are weak and the ammo is scarce. The parkour feels slow and almost never seems to grab what you're aiming for. The game runs really badly, with constant stuttering.","performance,gameplay"
+59,207438350,i enjoyed the game but there is an achievement that has 666 in it.So i stopped playing. Techland please remove this achievement.,gameplay
+60,206859871,"Add Ray Tracing. The lighting looks like shit.
+Why are they adding events when the game is still missing Ray Tracing and many people are still complaining about gameplay issues . . .","bugs,gameplay,graphics"
+61,206821682,"its AMAZING how they managed to ruin 85 fun hours of gameplay with one absolute dog shit mission. i have been coop with my wife the entire story and we have looked forward to the asylum and exploring it just for the entire mission to be forced stealth with so many UNKILLABLE volatiles that i actually fucking hated the mission more then any other i have ever done in all 3 games. it ruined the hype of the game for me and completly made me wanna stop playing for the night. instead of having a cool scary dungeon to explore with a hidden chimera to fight inside that was tested and experimented on we got trash forced stealth with no story weight to it in a tiny ass 2 wing hallway
+
+UPDATE WITH THE AIDEN BEAST BATTLE// WHAT IS THE FUCKING POINT OF ME LOTTING AND BUILDING UP ALL MY ITEMS TO TAKE EVERYTHING FROM ME BUT 3 FUCKING HEALTH PACKS AND A BAT. FUCK YOU TECHLAND","story,gameplay,content,graphics"
+62,208994013,"love the game, has bugs and issues like any other game. But i bought this game to play with 3 other friends, and for some reason it was glitchy on the first 2 days for me, kicking me out of the group or not giving me accomplishments because it says we are no longer sharing progress, and they are recieving beast points when i only recieve skill points. We each did the tutorial and started at the same exact time. Pretty much the experience is ruined and im regretting buying this instead of arc raiders or something else.","bugs,gameplay"
+63,204734350,"The game itself is decent, and the gore especially is well done, but the lack of ray tracing at launch was a terrible decision. While performance is solid, it feels irrelevant when the graphics look a decade old by comparison. I’ll update my review to recommended once ray tracing is added.","performance,content,graphics"
+64,208858564,"Boring and uninspired combat, lazy quest design, forces you to travel across map for no reason. Does not respect the players time. Parkour is Janky at best, map design is terrible for parkour. Skill tree is boring and mostly useless. The ledges are so annoying, the grapple sucks. 
+
+I have played DL1 and loved it, Played DL 2 and enjoyed it but i cannot recommend it at all. Seems like most of the reviews have been paid for or are AI. this came is not a return to form at all.","gameplay,content"
+65,216468643,"just an dlc to the DL2. its great game, but not worth 60eur. not much activites, other than grind the hordes...just running around in city. story is great and thats about it.","story,content,price"
+66,204814768,"This game just doesnt have the feel the others had it feels boring and empty, the parkour is rubbish compared to how it was in the last and now ive played a bit  im gutted ive played past the refund time","gameplay,content,price"
+67,212222879,Constant crashing and freezing. Story sucks & gameplay can be super frustrating.,"bugs,story,gameplay"
+68,205493818,"-) no choices in the storyline (boring one-sided)
+-) only about 10 missions for the main quest?? (~15-20 hours of playtime)
+-) not worth the full release price 
+-) boring ass characters (side quests aren’t even worth playing: “collect this,” “run there,” …)
+-) Looting for what? There are no good items to buy
+-) small map and city, nothing to explore
+At least positive:
+-) Fighting mechanics are better than in DL2
+-) Better graphics than in DL2","story,gameplay,content,graphics,price"
+69,204857617,Sadly this game keeps crashing on me no matter what I try. Seems it needs to get a hotfix ASAP. I'll update my review once I can actually play the game.,bugs
+70,204818758,"this game is turbo unfun in brutal with immersive hud. impossible to manage your stamina, you have no idea how much health you have even while in the inventory, the grappling hook makes no sense to use and the game doesnt teach you how. Didn't think I'd have issues doing parkour in the parkour game but even with the hook the matriarch arena might be the worst designed thing ive ever seen. Oh and you lose xp with every BS death. Try to climb up the window to the monastery safehouse, with the dumpster in front of it. let me know how that goes for you","bugs,gameplay"
+71,204736219,"Actually that game aint much better then Dying light 2 so far.
+
+The only good thing is that we got Crane back.
+
+But i ask you guys: 
+Where are to creepy Zombies? They look like they have Sunburn and look the same even worse then dl2
+They dont actually bite you like they did back then, they just hug and you lose HP only god knows why.
+The City doesnt even compare to Slums, old town or the following it just some weird city out in the nowhere.
+The sounds are so bad.
+BTW where tf is GAZI
+
+Anyway i dont get what you guys mean its like dying light 1 its far from it in almost every aspect.","graphics,audio"
+72,206020743,"As much as I love Dying Light, this is just Dying Light 2: Kyle Crane Edition, with significantly worse performance. It's unreal engines 5's fault but I cant recommend a game that crashes if I turn my head too quickly after loading into the game
+Also the story and side quests are a replica of dying light 2, just with more realistic visuals","performance,bugs,story,content,graphics"
+73,212357056,"I wanted to love this game as I have been a fan of the franchise, but this game definitely feels like a step back. The parkour in this title is severely limited due to the map being mostly open fields, marsh, or open land. The story and side quests feel half as much as the previous titles, and even the map feels largely dull in comparison to the first game.
+
+That being said, I still did have a moderate amount of fun in a playthrough but I found myself wanting it to end instead of seeking out easter eggs and challenges.","story,gameplay,content"
+74,205387694,"Game fucking sucks, really bad writing and I am a die hard fan of dying light 1(think its one of the best zombie game that was ever made). Stamina system is garbage atleast at early levels(Had to download unlimited stamina mod to make the game playable) all the ""tougher"" zombies feel fucking awful to fight like not hard just not fun at all, I can do 3 actions on brutal before I have to retreat for 15-20seconds to continue meanwhile they are coded really annoying. When the game is more grounded it feels nice but there is alot of things that breaks that immersion and its not like they even trying to keep it grounded as you will notice with the story of the game. really regret spending the 60dollars on this game, did it to support techland but im struggling to play more than 1 hour here and there before I get bored, angry or annoyed. Wish it was more than it is, hire som good writers for the next game please.
+
+EDIT: I downloaded unlimited stamina mod and now the game feels better.",story
+75,204681247,"Game seemed fun and I love the dismemberment physics, but it wont stop crashing in the first town area, no matter what I did. Hope they fix it, will buy it again in a few weeks!
+
+Crashing on - 13900k, RTX 4080, 32 Gb DDR6 6000 mhz, NVME (4k)",bugs
+76,205547083,"Its not a horrible game but it somehow doesnt live up to DL2 let alone 1, the campaign feels rushed and sloppy. the gameplay is slow and unrewarding, while the map is open, smaller than both games and empty. DL2 mightve been super janky at launch but i swear i had more fun in that game overall than The Beast. Its not worth the full price tbh and honestly...I feel as though I was robbed.","performance,gameplay,content,price"
+77,204639998,"No Raytracing at launch. I'll update my review when i get what was promised.
+
+Update 7th October. Just finished the game and all side activities, clocked in at 39 hours.
+The game is fine, but its not worth full price. Wait for sale. And no raytracing in sight. *Sigh* Its just better to wait when a game releases nowadays because theyre never fucking finished.","content,price"
+78,204728975,"Thoughts and prayers for the loser Gen-z who wrote the progressive script. Fun gameplay but politics was the greater priority instead of making compelling writing, and the game suffers for it.","story,gameplay"
+79,215810589,"Dying Light 2.5 is a shameless Nostalgia bait. 
+
+They didn't even try to create a story, the Antagonist is a Far Cry-esque cartoon cutout, parcour is clunky, combat feels outdated, ""bosses"" are damage-sponges with 3 attack patterns each, crafting relies on you collecting thousands of garbage items, dark zones are worthless copy paste dungeons, cars are completely out of place and exist purely because they existed before, etc.
+But hey, Kyle Crane is back, with a voice actor who's half asleep while reading his lines. Great
+
+It's a worse version of Dead Island 2. 
+","story,gameplay,audio,price"
+80,204632802,"I just can’t play this game, it feels like Dying Light 2 all over again. Same animations, same enemies, the same boring ""restore the electricity""puzzles. Even the gore feels copy-pasted, and the zombies look exactly the same after every fight - unlike Dead Island 2. On top of that, too much time gets wasted looting everything, and it completely kills the flow.
+
+Refunded. It’ll probably be fine for newcomers and diehard fans, though. Still, it feels more like a DLC pretending to be a full game. Just look at The Witcher 3: Blood and Wine - the price and amount of content put this to shame.","story,gameplay,content,graphics,price"
+81,209334927,Needed fast travel so bad. So much cross map travel that didn't add to the game at all. Also the ending was really weak. Fun to play with friends but I would never play through again or by myself.,"story,content"
+82,204979337,"This game is completely trash. If you try to dodge, the character jumps instead.",story
+83,204810849,"Just like the first one, not clicking. Just piles of dogshit ""modern"" frustration designs. Whoever made the command grab of mobs overwriting player's attacks, i want you to know you are the worst game ""designer"" out there. Most of the frustration in this game coming from this single ""design"" choice",story
+84,215976273,"If you are a fan of the original, do not bother with this game.
+Myself did not like DL 2, and have about 100hours in DL 1.
+They took everything we liked from the 1st, removed that and made this a copy of 2 with all the bad mechanics.
+
+I played the whole game with 2 friends.
+
+You get almost no XP for killing zombies now! Killing a brute gives you 15XP making it completly pointless to kill anything except what stands between you and the quest.
+Killing a volatile at night gives you 50xp and a few gold.
+
+They killed the grappling hook so you do not have any movement ability exept to RUN everywhere.
+The cars feels awful compared to the Following that did cars right.
+The combat feels floaty and there are no interesting weapons. All the weapons feels like hitting with a wet noodle.
+The talent tree is a snoozefest with almost no interesting abilities, even with the ""beast"" tree.
+
+Compared to the first, this is a massive dissapointment and i do not understand why this got the reception with such praise that it did.","gameplay,content"
+85,205767030,"Better than DL2, not as good as DL1. Gameplay is good but bugs make it annoying to deal with
+
+Audio constantly cutting in and out, sometimes in the middle of dialogue, more often the soundtrack doesnt know which track to play and just stutters over and over. Game also loves to freeze for 5 seconds when im trying to dodge through groups of zombies usually getting me grabbed. Im sure it will be patched but reckon you should wait for those patches before you put your money into this
+
+Also can Techland really not come up with a better name than ""The Baron""? Dudes a scientist not some 13th century noble makes me cringe anytime i hear that name","performance,bugs,story,gameplay,audio,price"
+86,204773895,"It's tedious, like a chore. Run here make the water work here, go there make the water work there. Meanwhile kill a small village in count of zombies. Care tho there might be humans with guns, that kill you with 10 bullets but you need to dump 2 mags into them.
+
+Unfortunately i did really enjoy the second one and the first one. But this one feel different, maybe I'm old maybe I'm miserable.
+
+Shame maybe later this year we'll give it a shot again, but rn we would rather go on a hike.
+
+To not be just negative. The game look fine, the cutscenes are nice. So far the story is another solid Dying Light. Parkour feels solid like the previous games (i would like parkour skills, which seems to be missing).
+
+I guess turning down the difficulty and just enjoy the gameplay is the way for us.","performance,story,gameplay,graphics"
+87,216019825,"The game is great. When it works. It's all the best parts of Dying Light 1 & 2 combined with some fun new mechanics. 
+
+However, for me, the game hard crashes constantly. I've tried all the suggested fixes and I don't have any issues running other games(including the other DL games). The performance is rock solid until it crashes out of nowhere and I lose a ton of progress each time because there's no manual save and the autosave is very sporadic.","performance,bugs,gameplay"
+88,204829106,"I wanted to like this game, but....
+
+The game in general is not finished.  Co-Op has a lot of bugs, me and my friend constantly have to reset the lobbies. The day night cycle is broken.  The climbing is slow, although it gets slightly better over time. But the biggest kick in the nuts is the grapple hook is COMPLETELY USELESS.  Might as well have left the grapple hook out of the game entirely.  When running and sometimes when in battle, basic zombies initiate the annoying grab animation WAY TO OFTEN.  A little is fine but if you ever get in a chase, you'll understand.
+
+The melee weapons are severely underwhelming.  I was hoping they'd get better over time but it seems the enemies just scale with your level and therefore you have to go through the entire game using an entire stamina bar just to kill a basic zombie.  The boss fights are just a tedious battle of wack the boss until there dead with whatever melee weapon you have.  Guns and throwables do next to 0 damage on any boss.  
+
+The story in itself isn't necessarily bad, but it isn't anything that keeps my attention, making me want to play more to find out what happens.  At this point I've turned the game to the easiest difficulty just to clear the story and never pick up again.
+
+ If it weren't too late, I'd return the game and get my money back","performance,bugs,story,gameplay,graphics,price"
+89,206148527,"The game is a 10/10 with gore but everything else is below average.
+
+The human on human combat makes no sense. They just walk at my gun barrel and die like idiots
+
+The villain is a twinky lil piss boy who is not at all threatening. he has chances to kill Crain but fails because he was too bust monologing
+
+The game feels like a slog especially with its story. You go from helping one helpless group to the next .
+
+all in all I am happy to see crain come back but the game needs better story and missions.","story,gameplay"
+90,207061326,"Uninspired and unoriginal. Still unlocking the same skills from the first game. You'd think Crane would remember to stomp on a zomb's head. Yet he plays like geriatric old man, getting absolutely man-handled by the local hospice residents, all while looking like a Greek god.  
+
+The dash skill mechanic actively ruins the fluidity and dynamics of parkour - e.g. landing from a jump, dropping off a small ledge, being knocked by a zombie, all reset your dash status stopping momentum and preventing an immediate response for a zomb vault or bash. And enjoy spamming shift since all movement nuances are tied to same key - run, dash, afterboost (Why is this even timed?)  
+
+It's really feels like that devs haven't played their own game, or the first for that matter. And what, now we wait years for this game to become enjoyable like DL2? Downright unrefined.","gameplay,graphics"
+91,204653811,"Dying Light: The Reuse Beast
+Its a corny stretched out DLC made to be sold as a game, with a blocker bugs still encountered after more than a week of launch
+Predicted every turn this story had from the begining of the game
+Still better than DL2 tho","bugs,story,content"
+92,205861054,"Gets incredibly boring and repetative, had fun for about 8 hours.  Wait for a sale.  SKIP
+
+","gameplay,content,price"
+93,204643399,"no ultrawide support, how is there games still coming out in 2025 with black bars?? 32:9 aspect ratio, 5120x1440 not working for anyone wondering...",content
+94,206440768,"Constantly freezes gameplay is shit only made it halfway through it since launch 
+Literally one of the games given tools the grapple hook does absolutely nothing useful","bugs,gameplay"
+95,204850232,"It took me a long time to decide whether I should click the button [I get this game 'for free'].（Because I pre-order Dying Light 2 the most expensive edition)
+In the end, I decided not to click that button because IT was supposed to be a part of DL2
+
+This game can't even say close to DL2, IT IS WORSE than DL2
+A DLC-sized game shouldn't be sold at a price of 60USD
+
+The main storyline was boring, it's just a story of vengeance, and I mean the kind of brainless vengeance.
+Most of the characters are one-dimensional and lack vividness.
+
+The background music was boring. 
+When you are driving on the road, it feels like there is only ONE song playing, and I can feel almost no fury
+
+And I have to say, I still think Dying Light 1 was the best of this IP
+DL2 and DL Beast have nothing to surpass DL1 but graphics.","story,gameplay,content,graphics,audio,price"
+96,211802911,"The game’s core mechanics (climbing/parkour) don’t unlock until around the 2-hour mark, and once they did, I found the gameplay unplayable for me. On top of that, the game causes major technical issues on my PC, including freezing other programs and repeatedly crashing Discord while it’s running. Because the extended tutorial delays access to the actual gameplay, my playtime went slightly over the limit before I could discover these problems. I'm sending a manual review for a refund.","bugs,story,gameplay,price"
+97,216062324,Extremely short game for that price. This should have been a DLC for DL2. Only get it on sale.,"content,price"
+98,207736368,"I am a very big fan of dying light one and two but this game was a very big let down, the game play is good and the over all zombie fighting. The game feels very empty and boring with not a lot to do other than fight zombies, the ending was very boring and was a let down to many people who have played their past games. Many typical obvious things happen in the story of the game where it feels like you can predict what happens before they even do. I was very hyped for this game and brought it off release but i was tragically let down, feels more like a dlc for the second game than a 60 quid money grap. Please save your money and dont buy this game","story,gameplay,content,price"
+99,208191761,"Loved DL1, DL2 was okay. This one though feels like it should have been a DLC for DL2.
+
+After completing main storyline, here's what I dont like about this game:
+- only 1 map, and it's pretty small too, only unique types of areas are old town, bunch of industrial buildings and parks/forest and caves, that's all there is
+- primitive skill tree
+- annoying jumpscares
+- zombies with ""sticky hands"" that grab you from 3 meters away
+- story - forgettable garbage with ultra-generic villain and AI generated dialogues, the worst out of 3 games. At least from 1st game you can remember that GF and her stupid younger brother, parkour guy, sadistic villain etc. And they gave Spike 1 line? Really?
+- the same health item that heals +10% HP, but is in 4 different variants, this makes 0 sense. It's like the same aid-kit was available as 4 different items with ONLY different names.
+
+if you buy it, buy it on at least -70% sale, but even then it's very mid. 
+At least they didnt silently add denuvo 3 days before release.","story,gameplay,content,price"
+100,206535780,"Holding this game up to the standard of the older Dying Light games, everything feels twice as clunky.
+Combat feels slow, unsatisfying and shackled to a stamina bar that drains incredibly fast.
+Movement, especially activating 'sprint' which ties to a lot of abilities is really finicky and not intitutive at all on PC.
+Looting is a chore and incredibly slow
+
+There is a reduction in perk bloat, but I feel like this is more of a detriment than a positive, because of how clunky the system feels. There's no perks that make your stamina last longer, there's no perks that allows faster looting.
+
+The story reminds lacks a lot in terms of motivation; it feels like I'm playing Wolfenstein set in Dying Light, except there isn't much focus on guns, but an unsatisfying melee and resource management.
+
+Why, on god, in 2025, is FOV not up to at least 90? It feels like I'm being tunnelvisioned and I despise it.
+
+I cannot recommend it for 60 euro.","performance,story,gameplay,content"
