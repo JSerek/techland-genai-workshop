@@ -1,0 +1,112 @@
+code_id,label,first_review,themes,category,quote_fragment
+C01,story-padded-with-filler-content,1,"T01, T09",Content / Value,huge portion of this games story are annoying (and boring) boss fights and fetch quests
+C02,boss-types-recycled-reused,1,T08,Content / Value,There are about 3 boss types that the game reuses throughout the story
+C03,game-too-short-justifies-high-price,1,"T01, T02",Content / Value,pad the runtime in order to justify a 60$ price tag
+C04,no-replayability-no-branching-paths,3,T01,Content / Value,doesn't have any branching path or offer any replayability
+C05,game-should-be-DLC-not-full-game,7,"T01, T02",Content / Value,This is a DLC pack for Dying Light 2 that they shoved a bunch of filler into
+C06,content-feels-unfinished-half-cooked,2,T01,Content / Value,"it feels unfinished, like content was left out"
+C07,asset-reuse-from-DL2,29,T01,Content / Value,Reused a ton of assets then charging $60 for it
+C08,cut-content-resold-as-separate-DLC,29,T02,Content / Value,cut and resold content which was not included for buying the ultimate edition prior
+C09,plot-logic-broken-by-side-quests,3,T04,Story / Narrative,The plot of the game stops making any sense if you actually do side missions
+C10,Kyle-motivation-inconsistent-with-DL1,2,T04,Story / Narrative,Kyle also seems to have inconsistent motivations with what was shown in the first game
+C11,lore-UV-light-rule-contradicts-gameplay,2,T04,Story / Narrative,ALL infected are affected by UV lights... BUT the basics are shown to hang out in the SUN
+C12,story-predictable-clichéd-overall,5,T04,Story / Narrative,some of the writing is awful. Not once but twice did survivors insist that the Baron is the real monster
+C13,villain-Baron-generic-one-dimensional,3,T04,Story / Narrative,"The Baron, the main villain is just the typical, evil British dude who wears turtlenecks"
+C14,quest-decisions-no-consequence-no-follow-up,5,"T04, T09",Story / Narrative,"Some quest chains have a decision at the end, but these don't lead anywhere because there is zero follow-up"
+C15,supporting-characters-vanish-after-purpose,5,T04,Story / Narrative,Major characters vanish from the world after they've served a purpose
+C16,story-second-half-degrades-into-grind,15,"T04, T09",Story / Narrative,"the game turns into a pure fetch quest, completely stops evolving in terms of gameplay"
+C17,ending-boss-fight-anticlimactic,3,"T04, T08",Story / Narrative,we get a lame flashback of Kyle's earlier imprisonment... he just punches it off a ledge
+C18,cutscene-removes-player-agency-stupidly,20,T04,Story / Narrative,Three times in the first 20 hours have I had cutscenes with stupid outcomes where Crane could have easily fought back
+C19,dialogue-cringe-poor-quality,24,T04,Story / Narrative,dialogue has to be the cringiest shit ive ever heard... exactly what the characters in a tekken campaign sound like
+C20,Kyle-reaction-internally-inconsistent,3,T04,Story / Narrative,Kyle was ready to murder Sheriff... Olivia literally orchestrated events... and he just goes 'okay'
+C21,antagonist-motivation-never-explained,18,T04,Story / Narrative,Why? What for? Why people are working for him? Do they have no choice?
+C22,mission-pattern-kill-cable-haven-looped,26,T09,Mission Design,Mission 1: kill a chimera / Mission 2: setup a safe haven / Mission 3: connect a cable
+C23,long-back-and-forth-travel-for-quests,13,"T09, T12",Mission Design,"make you travel five minutes to talk to someone for two seconds, then travel five minutes back"
+C24,cable-plug-in-only-puzzle-in-game,20,T09,Mission Design,I'm already tired of pulling cables as the only 'puzzle' in the game
+C25,fetch-quests-dominate-quest-design,5,T09,Mission Design,All Kyle seems to be doing is running fetch tasks and plugging in cables
+C26,linear-ledge-climb-sequences-in-quests,5,T09,Mission Design,Too often you are sent to a location to climb a long and linear path of ledges
+C27,tower-climbs-repeated-as-objective,9,T09,Mission Design,"stop making us climb towers! Why do you insist that a good gameplay loop is climb this, then climb that"
+C28,looting-same-locations-repeatedly,23,"T09, T11",Mission Design,Looting same places over and over again
+C29,loot-rewards-scale-below-starting-items,26,T11,Mission Design,a dogshit knife that does +33% damage... pushing it to 120 damage which is less than your first ever item
+C30,military-convoys-have-no-military-zombies,20,T09,Mission Design,Military convoys with zero military zombies around so you can't even open them
+C31,single-map-not-two-as-series-standard,1,T03,World Design,"there's only one map, as opposed to the two maps that's become standard for the series"
+C32,map-mostly-forest-poor-parkour-terrain,1,"T03, T17",World Design,most of the map is forest... wilderness is nowhere near as fun to run around in
+C33,insufficient-urban-area-for-parkour,1,"T03, T17",World Design,there's just not enough city to enjoy this games parkour
+C34,open-world-feels-empty-low-density,3,T03,World Design,mostly composed of massive open terrains that it simply filled with zombies
+C35,world-exploration-unrewarding-little-loot,24,"T03, T11",World Design,not many places feel like you want to explore and when you do there is like 1-2 pieces of loot max
+C36,environment-interiors-repetitive-layouts,18,T03,World Design,"when you've seen the same apartment or attic layout for the 10th time, it feels boring"
+C37,dark-zones-same-layout-not-scary,11,"T09, T07",World Design,Dark zones in this game are pretty one-dimensional
+C38,city-layout-breaks-parkour-flow,5,"T03, T17",World Design,the main city is also poorly designed for such movement... you cannot run from A to B
+C39,no-fast-travel-amplified-by-empty-world,3,"T12, T03",World Design,The game doesn't have a fast travel which is just a massive pain in the butt
+C40,parkour-actions-consistently-kill-momentum,25,T17,Parkour / Movement,a lot of actions kill momentum and grapple has issues that cause it to pause mid air removing flow
+C41,ledge-grab-fails-causes-death,3,"T10, T17",Parkour / Movement,Sometimes Crane doesn't grab onto the ledges he's supposed to... forcefully sent back to redo entire sections
+C42,grapple-hook-nerfed-targeting-broken,9,T17,Parkour / Movement,"The grappling hook is abysmal, its targeting sucks, the way it's played sucks, everything about it sucks"
+C43,movement-floaty-slow-overall,29,T17,Parkour / Movement,parkour feels float-y and slow
+C44,climbing-too-slow-no-speed-option,17,T17,Parkour / Movement,Climbing up is so slow in this game and you are unable to speed it up
+C45,slow-ledge-shimmy-kills-momentum,20,T17,Parkour / Movement,full of slow ledge crawling that takes multiple minutes of shimmying
+C46,movement-grabs-wrong-surfaces-slides-off,21,"T17, T10",Parkour / Movement,"you grab onto every single thing you touch, and yet slide off of every surface that you should be able to stand on"
+C47,no-parkour-skills-to-unlock,2,"T05, T17",Parkour / Movement,THERE ARE NO REAL PARKOUR SKILLS TO UNLOCK
+C48,jump-feels-delayed-obnoxious,2,T17,Parkour / Movement,Jump feels slightly delayed which is obnoxious
+C49,zombie-grab-too-frequent-long-range,12,T14,Combat / Difficulty,The Grab mechanic the zombies have ruins this game. they grab way too often
+C50,grab-cancels-player-attack-mid-swing,12,T14,Combat / Difficulty,it even cancels you if you are mid swing with your melee attack
+C51,grab-initiates-QTE-mid-horde-disrupts-flow,21,T14,Combat / Difficulty,every zombie that walks up to you latches onto you and starts a QTE in the middle of a horde
+C52,hitbox-kick-fails-at-point-blank-range,6,"T14, T10",Combat / Difficulty,"Kicking a zombie 3 meters away works. But kicking one standing in your face, somehow is too much"
+C53,stomp-finisher-pixel-perfect-restrictive,6,T14,Combat / Difficulty,"Enemy must be on the ground, must be stunned AND you must stand on the perfect pixel"
+C54,stamina-depletes-too-fast-for-combat,6,T14,Combat / Difficulty,Crane can barely swing two times before dying of asthma
+C55,combat-animation-cancels-lock-player,21,"T14, T10",Combat / Difficulty,"every single thing that happens constantly cancels your animations, wastes your stamina"
+C56,combat-too-basic-simplified-vs-DL2,9,T14,Combat / Difficulty,"Combat? More basic than 2. M1, perfect dodge/parry, repeat"
+C57,redirect-button-conflicts-with-loot-button,6,T15,Combat / Difficulty,"'Redirect attack' uses the same button as 'loot corpse,' so half my fights end with Crane grabbing +1 alcohol"
+C58,human-enemies-dodge-unrealistically,25,"T14, T08",Combat / Difficulty,human ai can dodge attacks that they realistically should not be able to dodge like tackles
+C59,camera-thrown-in-combat-by-animations,21,T14,Combat / Difficulty,"Combat is frustrating, because your camera is constantly being thrown around by every single motion"
+C60,combat-sluggish-regression-vs-DL1,4,T14,Combat / Difficulty,combat also feels more sluggish
+C61,human-enemies-attract-zombies-unfairly,9,"T14, T08",Combat / Difficulty,"The addition to human enemies is annoying, they attract more zombies"
+C62,volatile-detection-through-walls-unfair,21,"T14, T08",Combat / Difficulty,"Volatiles see you through fucking walls when you're crouched, standing still, with no flashlight on"
+C63,skill-tree-too-small-sparse,2,T05,Progression / Skills,the skill trees are TINY. I'm talking maybe 12 skills TOTAL
+C64,no-parkour-XP-no-combat-XP,2,T05,Progression / Skills,XP gains for differing actions were CUT. NO MORE PARKOUR EXP
+C65,progression-pace-too-slow,4,T05,Progression / Skills,"the game is very slow in terms of progress, like painfully slow to level"
+C66,too-few-levels-low-progression-cap,2,T05,Progression / Skills,there are only 15 total levels
+C67,skills-recycled-from-DL1-2-but-now-locked,9,T05,Progression / Skills,"Skill tree? Super basic, full of abilities you already had from the previous titles"
+C68,skill-tree-forces-unwanted-skills,20,T05,Progression / Skills,forces you to take things you don't want to get to things that you do
+C69,passive-tree-minimal-gameplay-impact,17,T05,Progression / Skills,The passives you gain almost do not change the way you play the game
+C70,no-separate-parkour-combat-skill-trees,17,T05,Progression / Skills,No parkour and combat tree makes the game stale
+C71,progression-feels-illusory-no-power-curve,17,T05,Progression / Skills,character progression literally doesn't exist. It's all an illusion
+C72,gear-score-system-feels-like-chore,16,"T05, T11",Progression / Skills,the gear score system is just a chore... look for a shirt that does 11 armour instead of levelling the stat
+C73,enemy-level-scaling-breaks-realism,6,"T08, T14",Enemy AI / Encounters,A zombie shouldn't survive 6 headshots because it's 'Level 6'
+C74,volatile-patrol-AI-pathing-broken,17,"T08, T10",Enemy AI / Encounters,Pathing of the Volatiles especially is so trash
+C75,human-NPC-exempt-from-gun-aggro-rules,22,T08,Enemy AI / Encounters,"when those human are fighting those zombies, firing guns... there's no reaction from Virals"
+C76,boss-fight-ignores-co-op-balance,16,"T08, T13",Enemy AI / Encounters,Both of these fights are not designed with co-op in mind
+C77,boss-artificially-strips-weapons-items,16,"T08, T14",Enemy AI / Encounters,you aren't allowed to bring your own healing items or own weapons... because the devs knew you'd be too powerful
+C78,volatile-spawn-rate-too-high-at-night,4,"T07, T14",Night Mechanics,the volitile spawn seems to be way to high... when the sun sets it becomes a chore
+C79,volatiles-spawn-directly-in-front-of-player,5,"T07, T08",Night Mechanics,the Volatiles spawn right in front of you and circle your location
+C80,night-disrupts-flow-becomes-chore,4,T07,Night Mechanics,"So rather than having an interesting game play mechanic, they created a flow interrupting chore"
+C81,night-loses-identity-not-worth-engaging,5,T07,Night Mechanics,"Aside from a few night quests, it might as well not exist"
+C82,double-xp-night-incentive-insufficient,5,T07,Night Mechanics,"You get double XP at night, but it is not worth it"
+C83,volatile-can-spot-player-through-walls,16,"T07, T08",Night Mechanics,seem to be able to just spot you through walls when they shouldn't be able to
+C84,weapon-durability-too-low,2,T11,Economy / Loot,weapons break SUPER quick... before completing the first objective all 4 weapons broke
+C85,weapon-variety-poor-same-weapons-repeat,26,T11,Economy / Loot,I wonder if i'll get my 100th 'Jawline' axe? or 700th pair of saber claws
+C86,guns-underpowered-vs-melee-damage,2,"T11, T14",Economy / Loot,1 shot equals 3 melee hits it just doesn't feel like they'll actually scale nicely
+C87,guns-overpowered-ammo-too-plentiful,19,"T11, T14",Economy / Loot,"with all the ammo you get, even on brutal, why use anything else"
+C88,crafting-recipes-arbitrary-expensive,21,T11,Economy / Loot,Crafting recipes don't make sense and are expensive for no reason
+C89,resource-scarcity-wiring-forces-grind,17,T11,Economy / Loot,you need a LOT of COMMON resources (especially wirings) and the way you obtain them is not good design
+C90,in-game-store-useless-nothing-to-buy-for,18,T11,Economy / Loot,I don't understand why you need the store for. Just craft everything and find everything
+C91,day-night-cycle-sun-never-sets-bug,17,T10,Technical / Bugs,"the sun almost NEVER sets, so it's pretty much ALWAYS bright outside"
+C92,co-op-day-night-desync-bug,17,"T10, T13",Technical / Bugs,in co-op some players had daytime while others had night
+C93,cutscene-crash-bugs,11,T10,Technical / Bugs,random crashes during and outside of cutscenes
+C94,mission-blocking-bugs-power-cord,11,T10,Technical / Bugs,problems with power cords being bugged where you can't interact with them at all
+C95,hives-bugged-nonexistent-in-open-world,17,T10,Technical / Bugs,Hives either don't exist at all in the current version or are just bugged
+C96,animation-glitches-enemies-and-allies,17,T10,Technical / Bugs,"Animation glitches all over the place, from enemies, to allies"
+C97,forced-account-creation-popup-spam,28,"T13, T15",Technical / Bugs,has already spammed me 3 times and opened the browser to create an account on the EpiG shit website
+C98,vehicles-no-ownership-no-customization,1,T16,Vehicle System,"the cars in the game arent yours, you don't own them and cannot modify or customize them in any way"
+C99,vehicles-too-slow-and-fragile,1,T16,Vehicle System,these cars are slow and break so easily
+C100,map-terrain-blocks-cars-trees-in-way,1,"T16, T03",Vehicle System,"this map is not built for cars, as instead of large open fields you get forests with a shit ton of trees"
+C101,no-car-summoning-must-find-in-wild,1,"T16, T12",Vehicle System,"there is also no way to summon a car, so you have to find them in the wild"
+C102,car-physics-inconsistent,3,"T16, T10",Vehicle System,"I car ride into a horde of zombies and just keep going, but I hit a traffic cone and my car grinds to a stop"
+C103,car-fixed-spawn-points-kill-exploration,5,T16,Vehicle System,"It is quicker to quit the game, reload, find a freshly spawned vehicle nearby"
+C104,cars-become-default-travel-replacing-parkour,5,"T16, T17",Vehicle System,pickup trucks... become the default method of travel. This is odd in a series that was supposed to be about parkour
+C105,beast-mode-novelty-fades-quickly,11,T06,Beast Mode,Cool for the first hour or two of gameplay but then it doesn't feel as special
+C106,beast-mode-fill-rate-too-slow-random,20,T06,Beast Mode,Beast mode is random (and fills so slowly it may as well barely exist)
+C107,beast-mode-weaker-than-weapons-midgame,16,T06,Beast Mode,"by the half way point, basically worse than any of the weapons you find"
+C108,beast-mode-random-activation-inconvenient,21,T06,Beast Mode,"outside of randomly going super saiyan at the weirdest and least convenient possible times, it does nothing"
+C109,price-too-high-for-content-received,1,T02,Price / Value,Is it worth the price? No. Id only get it if you're a dead hard dying light fan
+C110,recommend-sale-only,4,T02,Price / Value,Pick it up on a sale
+C111,game-overhyped-relative-to-quality,9,T02,Price / Value,I think this game is overhyped too as another comment pointed out

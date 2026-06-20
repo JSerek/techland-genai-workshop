@@ -1,160 +1,80 @@
-# 🚀 Quick Start Guide
+# 🚀 Quick Start — uczestnik warsztatu
 
-**Szybki start dla uczestników warsztatów**
-
----
-
-## ⚡ W 3 krokach do danych
-
-### Krok 1: Setup (5 min)
-
-```bash
-# Przejdź do folderu projektu
-cd szkolenie_techland
-
-# Utwórz środowisko wirtualne
-python3 -m venv venv
-source venv/bin/activate
-
-# Zainstaluj biblioteki
-pip install -r requirements.txt
-```
-
-### Krok 2: Pobierz dane (10-30 min)
-
-**Szybki test (100 recenzji):**
-```bash
-python scripts/scrape_reviews.py --max-reviews 100
-```
-
-**Pełny dataset (10k recenzji - ~15 min):**
-```bash
-python scripts/scrape_reviews.py --max-reviews 10000
-```
-
-**Maksymalny dataset (100k recenzji - ~2h):**
-```bash
-python scripts/scrape_reviews.py --max-reviews 100000
-```
-
-### Krok 3: Eksploruj dane
-
-```bash
-jupyter notebook notebooks/01_data_collection.ipynb
-```
+Wszystko działa w **Google Colab**. Nie instalujesz nic lokalnie.
 
 ---
 
-## 📊 Przykładowe komendy
+## ⚡ W 4 krokach do pierwszej klasyfikacji
 
-### CLI Script - Różne opcje
+### 1. Otwórz `00_smoke_test_auth.ipynb`
+Link poda prowadzący. Ten notebook sprawdza Twoje środowisko: logowanie OAuth do
+Vertex AI oraz `git clone` repo. Uruchom wszystkie komórki — na końcu masz raport.
 
-```bash
-# Tylko negatywne recenzje (default)
-python scripts/scrape_reviews.py --max-reviews 5000
+### 2. Uruchom komórki setup w notebooku 03
+Klonują repo, instalują biblioteki (`openai`, `instructor`, `pydantic`,
+`google-auth`, `pandas`, `matplotlib`, `tqdm`) i dodają `notebooks/` do `sys.path`.
+Pierwsze uruchomienie ~1 min.
 
-# Wszystkie recenzje (pozytywne + negatywne)
-python scripts/scrape_reviews.py --max-reviews 5000 --review-type all
-
-# Tylko pozytywne
-python scripts/scrape_reviews.py --max-reviews 5000 --review-type positive
-
-# Export tylko do JSON
-python scripts/scrape_reviews.py --max-reviews 1000 --formats json
-
-# Polskie recenzje
-python scripts/scrape_reviews.py --language polish --max-reviews 1000
-
-# Wznów przerwany scraping
-python scripts/scrape_reviews.py --resume
-```
-
----
-
-## 🐍 Python Quick Start
+### 3. Zaloguj się i wpisz `PROJECT_ID`
+Przy `authenticate_user()` zaloguj się kontem Google z dostępem do firmowego GCP.
+W komórce konfiguracji ustaw:
 
 ```python
-from src.scraper.steam_api import quick_scrape
-
-# Najprostsze użycie
-reviews = quick_scrape(
-    app_id=3008130,
-    max_reviews=1000,
-    review_type="negative",
-    language="english"
-)
-
-print(f"Pobrano {len(reviews)} recenzji")
-
-# Zobacz pierwszą recenzję
-review = reviews[0]
-print(f"Sentiment: {review.sentiment}")
-print(f"Text: {review.review}")
-print(f"Playtime: {review.playtime_hours}h")
+PROJECT_ID = "twoj-projekt-gcp"   # <- jedyne, co musisz wpisać
+LOCATION   = "europe-west4"
+client = create_workshop_client(PROJECT_ID, location=LOCATION)
 ```
+
+> 🔑 **Bez kluczy API.** Token OAuth (Bearer) pozyskuje helper. Token wygasa po
+> ~1 h — przy długiej sesji uruchom komórkę z `create_workshop_client(...)` ponownie.
+
+### 4. Klasyfikuj
+Uzupełnij `SYSTEM_PROMPT` i `USER_PROMPT`, przetestuj na 1 recenzji, puść na 20,
+zobacz metryki. Potem przejdź do notebooków 04 → 05 → 06.
+
+---
+
+## 🗺️ Plan notebooków
+
+| # | Notebook | Technika |
+|---|----------|----------|
+| 00 | `00_smoke_test_auth` | test środowiska (OAuth + git clone) |
+| 03 | `03_iteration1_basic_prompting` | zero-shot |
+| 04 | `04_iteration2_structured_output` | Pydantic + Instructor |
+| 05 | `05_iteration3_chain_of_thought` | Chain-of-Thought |
+| 06 | `06_iteration4_few_shot` | few-shot |
+
+Każdy notebook: blok „mamy ekspercką klasyfikację 20 recenzji” (`show_categories()`,
+`show_golden_reviews()`) → **puste prompty do uzupełnienia** → klasyfikacja →
+ewaluacja (accuracy + czułość + swoistość).
 
 ---
 
 ## 🔧 Troubleshooting
 
-### Problem: `ModuleNotFoundError`
-**Rozwiązanie:** Aktywuj środowisko wirtualne
-```bash
-source venv/bin/activate
-```
+**`from workshop_utils import ...` → ModuleNotFoundError**
+Uruchom najpierw komórkę setup (dodaje `notebooks/` do `sys.path`).
 
-### Problem: Scraping bardzo wolny
-**Rozwiązanie:** To normalne - mamy rate limiting (bezpieczeństwo). Około 100-120 reviews/sekundę.
+**401 / 403 przy wywołaniu modelu**
+Token wygasł lub brak uprawnień do projektu. Uruchom ponownie
+`create_workshop_client(PROJECT_ID)` i sprawdź, czy `PROJECT_ID` jest poprawny oraz
+czy masz dostęp do Vertex AI w regionie `europe-west4`.
 
-### Problem: `429 Too Many Requests`
-**Rozwiązanie:** Steam zablokował IP na chwilę. Poczekaj 15-30 min i spróbuj ponownie.
+**Pusta / dziwna odpowiedź modelu**
+Najpierw testuj na 1 recenzji. Doprecyzuj prompt: format odpowiedzi i zamknięta
+lista 15 kategorii (`show_categories()`).
 
-### Problem: Scraping się przerwał
-**Rozwiązanie:** Użyj `--resume` aby wznowić z ostatniego checkpointu
-```bash
-python scripts/scrape_reviews.py --resume
-```
-
----
-
-## 📁 Gdzie są dane?
-
-Po scrapingu dane znajdziesz w:
-```
-data/raw/reviews_3008130_negative_english.{json,csv,parquet}
-```
-
-**Formaty:**
-- `.json` - do przeglądania, debugowania
-- `.csv` - do Excela, Pandas
-- `.parquet` - najszybszy, najmniejszy (rekomendowany)
+**Golden dataset nie znaleziony**
+Upewnij się, że repo zostało sklonowane (komórka setup) — plik leży w
+`data/evaluation/golden_dataset.json`.
 
 ---
 
 ## ✅ Checklist przed warsztatami
 
-- [ ] Zainstalowane zależności (`pip install -r requirements.txt`)
-- [ ] Pobrane minimum 1000 recenzji
-- [ ] Otworzony notebook `01_data_collection.ipynb`
-- [ ] API Key do LLM (Claude/OpenAI/inne)
-- [ ] Dostęp do Google Colab (opcjonalnie)
+- [ ] Konto Google + dostęp do firmowego projektu GCP (Vertex AI, `europe-west4`)
+- [ ] Działa [colab.research.google.com](https://colab.research.google.com)
+- [ ] `00_smoke_test_auth.ipynb` przechodzi na zielono
+- [ ] Znasz swój `PROJECT_ID`
 
----
-
-## 🆘 Pomoc
-
-Jeśli coś nie działa:
-1. Sprawdź czy środowisko wirtualne jest aktywowane
-2. Sprawdź czy wszystkie zależności są zainstalowane
-3. Uruchom test API: `python -c "import requests; print('OK')"`
-4. Zadaj pytanie prowadzącemu!
-
----
-
-## 🎯 Następne kroki
-
-Po pobraniu danych, przejdź do:
-1. `02_data_cleaning.ipynb` - czyszczenie danych
-2. `03_iteration1_basic.ipynb` - pierwsze promptowanie
-
-**Good luck!** 🚀
+W razie problemów — pytaj prowadzącego! 🚀
