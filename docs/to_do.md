@@ -14,7 +14,7 @@
 | **T4** — notebook 04 | ✅ **DONE** (2026-06-20) |
 | **T5** — notebook 05 | ✅ **DONE** (2026-06-20) |
 | **T6** — notebook 06 | ✅ **DONE** (2026-06-20) |
-| T7 — trym repo | ☐ OPEN |
+| **T7** — trym repo | ✅ **DONE** (2026-06-20) |
 
 ## Mapa zależności
 
@@ -188,7 +188,17 @@ requirements.txt (część T7) — można zrobić w dowolnym momencie; sam trym 
 - **Kroki:** szablon T3 + blok danych na górze. Krótka definicja few-shot (bez zalet/wad). **Zadanie:** uczestnik dobiera przykłady — `FEW_SHOT_EXAMPLES = []` (pusty placeholder), bez gotowych przykładów. Prompty puste. Możesz zostawić zwięzłą końcową komórkę porównawczą (`compare_trials`) jeśli pasuje do jednego-modelowej ewaluacji, ale bez wstawiania gotowych wyników.
 - **Akceptacja:** jak T3; `FEW_SHOT_EXAMPLES` pusty; brak gotowych przykładów/promptów.
 
-## T7 — Trym repozytorium + slim requirements (OSTATNIE)
+## T7 — Trym repozytorium + slim requirements (OSTATNIE) ✅ DONE (2026-06-20)
+
+> **Zrealizowane.** Gałąź `authoring` zachowuje pełną zawartość (src/, scripts/,
+> analysis/, docs/, notebooki 01–02, surowe dane, PDF, guide). `main` przycięty do
+> minimum klonowanego przez uczestników: `notebooks/` (00, 03–06 + `workshop_utils.py`),
+> `data/evaluation/golden_dataset.{json,csv}`, slim `requirements.txt` (openai,
+> instructor, pydantic, google-auth, pandas, matplotlib, tqdm), `README`/`QUICKSTART`,
+> `.gitignore`. Weryfikacja: `git clone --depth 1` `main` → tylko notatniki + dane +
+> requirements; smoke test ma cele `requirements.txt`/`notebooks`/`data`; notebooki
+> 00, 03–06 + `workshop_utils.py` przechodzą json+ast; brak `src.`/kluczy API.
+> README/QUICKSTART były już zsynchronizowane (T6) — bez dalszych zmian.
 
 - **Zależności:** T1–T6 ukończone i przetestowane. (Sam `requirements.txt` można odchudzić wcześniej.)
 - **Cel:** `main` klonowany przez uczestników = minimum; materiały autorskie zachowane.
