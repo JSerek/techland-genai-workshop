@@ -13,21 +13,12 @@ ENV/
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# Data files - raw data can be large
-data/raw/*.json
-data/raw/*.csv
-data/raw/*.parquet
-data/processed/*.json
-data/processed/*.csv
-data/processed/*.parquet
+# Lokalne dane autorskie (poza warsztatowym golden dataset) — nie commitujemy
+data/raw/
+data/processed/
 
-# Keep directory structure but ignore contents
-!data/raw/.gitkeep
-!data/processed/.gitkeep
+# Golden dataset (warsztatowy) JEST commitowany do repo
 !data/evaluation/.gitkeep
-
-# Pliki warsztatowe SĄ commitowane do repo
-!data/processed/workshop_sample.csv
 !data/evaluation/golden_dataset.json
 !data/evaluation/*.csv
 
