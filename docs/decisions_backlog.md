@@ -109,11 +109,12 @@
 
 ## D-010 — Trym repozytorium `main` do minimum warsztatowego
 
-- **Status:** DONE (decyzja) / do implementacji
-- **Zaktualizowano:** 2026-06-20 16:40 CEST
+- **Status:** DONE (zaimplementowane — T7)
+- **Zaktualizowano:** 2026-06-20 18:30 CEST
 - **Kontekst:** Uczestnicy klonują repo na starcie. Pełna struktura (scraper, scripts, analysis, docs, dane surowe, PDF-y) ich rozprasza („się pogubią"). Warsztat operuje wyłącznie na 20 recenzjach.
 - **Decyzja:** Materiały autorskie przenosimy na osobną gałąź `authoring` (pełna historia bez strat). Gałąź `main` (klonowana przez uczestników) zawiera tylko: `notebooks/` (z `workshop_utils.py`), `data/evaluation/golden_dataset.{json,csv}`, odchudzony `requirements.txt`, skrócony `README`/`QUICKSTART`, `.gitignore`. `requirements.txt` redukujemy do: `openai`, `instructor`, `pydantic`, `google-auth`, `pandas`, `matplotlib`, `tqdm`.
 - **Następstwa:** Wybór „jeden plik-helper" zamiast importów z `src/`. Smoke test (`00_*`) sprawdza `requirements.txt`, `notebooks`, `data` — po trymie nadal zielony.
+- **Aktualizacja 2026-06-20 (T7 wykonane):** Trym zrealizowany. Utworzono gałąź `authoring` (`616e881` snapshot + `355a522` to_do T7-DONE) z pełnym backupem: `src/`, `scripts/`, `analysis/`, `docs/`, notebooki `01`–`02`, surowe dane (`data/raw`, `data/processed`), `data/*.docx`/`*.csv` autorskie, PDF, `LLM_AGENTS_BEST_PRACTICES_GUIDE.md`. `main` (`9b6d246`) przycięty `git rm --cached` do: `notebooks/` (00, 03–06 + `workshop_utils.py`), `data/evaluation/golden_dataset.{json,csv}`, slim `requirements.txt` (7 zależności jak w decyzji), `README`/`QUICKSTART` (były już zsynchronizowane w T6), `.gitignore`. Pliki autorskie nadal na dysku lokalnie (untracked na `main`). Weryfikacja: `git clone --depth 1` `main` → tylko notatniki + dane + requirements; smoke test ma cele `requirements.txt`/`notebooks`/`data`; notebooki 00, 03–06 + `workshop_utils.py` przechodzą json+ast; brak `src.`/kluczy API. **Niepushowane** — commity lokalne, push czeka na decyzję prowadzącego. Zamyka [D-010]; cały plan `docs/to_do.md` (T1–T7) ukończony.
 
 ---
 
