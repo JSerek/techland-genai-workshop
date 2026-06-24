@@ -13,3 +13,6 @@ matplotlib>=3.8.0
 
 # Progress
 tqdm>=4.66.0
+
+# Interaktywne widgety (przełącznik wykresu accuracy; wymagane też przez tqdm.notebook)
+ipywidgets>=8.0.0

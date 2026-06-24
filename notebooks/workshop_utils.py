@@ -335,8 +335,11 @@ class EvaluationResult(BaseModel):
     review_text: str
     expected: list[str]
     actual: list[str]
-    is_correct: bool
+    is_correct: bool                       # wg strategii głównej (`strategy`)
     match_strategy: MatchStrategy
+    is_correct_contains_all: bool = False  # czy predykcja zawiera WSZYSTKIE oczekiwane
+    is_correct_exact: bool = False         # czy predykcja == oczekiwane (idealnie)
+    reasoning: Optional[str] = None        # rozumowanie modelu (CoT), jeśli zebrane
 
 
 class ConfusionStats(BaseModel):
@@ -363,7 +366,9 @@ class EvaluationSummary(BaseModel):
     """Zbiorcze statystyki ewaluacji."""
     total: int
     correct: int
-    accuracy: float = Field(ge=0.0, le=1.0)
+    accuracy: float = Field(ge=0.0, le=1.0)  # wg strategii głównej (`strategy`)
+    accuracy_contains_all: float = Field(default=0.0, ge=0.0, le=1.0)
+    accuracy_exact: float = Field(default=0.0, ge=0.0, le=1.0)
     results: list[EvaluationResult]
     confusion: ConfusionStats              # micro (po wszystkich kategoriach)
     per_category: dict[str, ConfusionStats]  # kod kategorii → confusion
@@ -413,11 +418,14 @@ def evaluate_trial(
     review_texts: list[str],
     strategy: MatchStrategy = MatchStrategy.CONTAINS_ALL,
     categories: Optional[list[str]] = None,
+    reasonings: Optional[list[str]] = None,
 ) -> TrialResult:
     """Ewaluuje wyniki jednej próby klasyfikacji multi-label.
 
     Liczy:
-    - accuracy (wg ``strategy``),
+    - accuracy (wg ``strategy``) oraz dwa warianty niezależnie od strategii:
+      ``accuracy_contains_all`` (predykcja zawiera wszystkie oczekiwane) i
+      ``accuracy_exact`` (predykcja dokładnie równa oczekiwanym),
     - confusion matrix względem uniwersum kategorii (per recenzja:
       ``TP=|E∩P|, FN=|E\\P|, FP=|P\\E|, TN=|U\\(E∪P)|``),
     - micro czułość ``ΣTP/(ΣTP+ΣFN)`` i swoistość ``ΣTN/(ΣTN+ΣFP)``,
@@ -425,11 +433,18 @@ def evaluate_trial(
 
     Args:
         categories: uniwersum kategorii (domyślnie 15 kodów z ``CATEGORIES``).
+        reasonings: opcjonalne rozumowania modelu (CoT) — po jednym na recenzję;
+            jeśli podane, trafiają do tabeli wyników.
     """
     if not (len(predictions) == len(expected) == len(review_texts)):
         raise ValueError(
             f"Długości list muszą być równe: predictions={len(predictions)}, "
             f"expected={len(expected)}, review_texts={len(review_texts)}"
+        )
+    if reasonings is not None and len(reasonings) != len(predictions):
+        raise ValueError(
+            f"reasonings musi mieć tyle samo elementów co predictions "
+            f"({len(reasonings)} != {len(predictions)})."
         )
 
     universe = {c.strip().lower() for c in (categories or CATEGORY_CODES)}
@@ -438,7 +453,7 @@ def evaluate_trial(
     per_cat: dict[str, ConfusionStats] = {c: ConfusionStats() for c in universe}
     micro = ConfusionStats()
 
-    for text, pred, exp in zip(review_texts, predictions, expected):
+    for i, (text, pred, exp) in enumerate(zip(review_texts, predictions, expected)):
         a = _normalize(pred)
         e = _normalize(exp)
         correct = _is_match(pred, exp, strategy)
@@ -448,6 +463,9 @@ def evaluate_trial(
             actual=pred,
             is_correct=correct,
             match_strategy=strategy,
+            is_correct_contains_all=_is_match(pred, exp, MatchStrategy.CONTAINS_ALL),
+            is_correct_exact=_is_match(pred, exp, MatchStrategy.EXACT),
+            reasoning=(reasonings[i] if reasonings is not None else None),
         ))
 
         cell = _confusion_for_review(a, e, universe)
@@ -458,11 +476,17 @@ def evaluate_trial(
     correct_count = sum(r.is_correct for r in results)
     total = len(results)
     accuracy = correct_count / total if total > 0 else 0.0
+    acc_contains_all = (
+        sum(r.is_correct_contains_all for r in results) / total if total else 0.0
+    )
+    acc_exact = sum(r.is_correct_exact for r in results) / total if total else 0.0
 
     summary = EvaluationSummary(
         total=total,
         correct=correct_count,
         accuracy=round(accuracy, 4),
+        accuracy_contains_all=round(acc_contains_all, 4),
+        accuracy_exact=round(acc_exact, 4),
         results=results,
         confusion=micro,
         per_category=per_cat,
@@ -521,35 +545,48 @@ def _per_category_df(summary: EvaluationSummary) -> pd.DataFrame:
 
 
 def _display_trial_table(trial: TrialResult, max_text_len: int = 80) -> None:
-    """Wyświetla wyniki jednej próby: per recenzja + metryki + per-kategoria."""
+    """Wyświetla wyniki jednej próby: per recenzja + metryki + per-kategoria + wykres."""
     summary = trial.summary
     micro = summary.confusion
+    total = summary.total
+
+    n_ca = sum(r.is_correct_contains_all for r in summary.results)
+    n_ex = sum(r.is_correct_exact for r in summary.results)
 
     print(f"\n{'='*70}")
     print(f"Próba: {trial.trial_name}")
     print(f"Model: {trial.model} | Prompt: {trial.prompt_variant}")
-    strat = summary.results[0].match_strategy.value if summary.results else "N/A"
-    print(f"Strategia matchowania: {strat}")
     print(f"{'='*70}")
-    print(f"Accuracy:  {summary.accuracy:.1%}  ({summary.correct}/{summary.total})")
+    print(f"Accuracy (zawiera wszystkie / contains_all): "
+          f"{summary.accuracy_contains_all:.1%}  ({n_ca}/{total})")
+    print(f"Accuracy (idealnie / is_exactly):            "
+          f"{summary.accuracy_exact:.1%}  ({n_ex}/{total})")
     print(f"Czułość (micro):   {micro.sensitivity:.1%}  "
           f"(TP={micro.tp}, FN={micro.fn})")
     print(f"Swoistość (micro): {micro.specificity:.1%}  "
           f"(TN={micro.tn}, FP={micro.fp})")
     print(f"{'='*70}\n")
 
+    # Czy mamy rozumowanie (CoT) do pokazania?
+    has_reasoning = any((r.reasoning or "").strip() for r in summary.results)
+
     # Tabela per-recenzja
     rows = []
     for r in summary.results:
-        rows.append({
+        row = {
             "Recenzja (fragment)": _truncate(r.review_text, max_text_len),
             "Oczekiwane": ", ".join(r.expected),
             "Predykcja modelu": ", ".join(r.actual),
-            "Poprawne": "✅" if r.is_correct else "❌",
-        })
+            "Poprawne (zawiera wszystkie)": "✅" if r.is_correct_contains_all else "❌",
+            "Poprawne (idealnie)": "✅" if r.is_correct_exact else "❌",
+        }
+        if has_reasoning:
+            row["Rozumowanie (CoT)"] = _truncate(r.reasoning or "", 300)
+        rows.append(row)
     df = pd.DataFrame(rows)
 
     per_cat_df = _per_category_df(summary)
+    correct_cols = ["Poprawne (zawiera wszystkie)", "Poprawne (idealnie)"]
 
     try:
         from IPython.display import display
@@ -558,7 +595,7 @@ def _display_trial_table(trial: TrialResult, max_text_len: int = 80) -> None:
                 "background-color: #d4edda" if v == "✅" else "background-color: #f8d7da"
                 for v in col
             ],
-            subset=["Poprawne"],
+            subset=correct_cols,
         )
         display(styled)
         print("\nMetryki per-kategoria:")
@@ -567,6 +604,101 @@ def _display_trial_table(trial: TrialResult, max_text_len: int = 80) -> None:
         print(df.to_string(index=False))
         print("\nMetryki per-kategoria:")
         print(per_cat_df.to_string(index=False))
+
+    # Wykres accuracy per kategoria + ALL (przełącznik contains_all / is_exactly)
+    _display_accuracy_chart(summary)
+
+
+# ---------------------------------------------------------------------------
+# Ewaluacja — wykres accuracy per kategoria (+ ALL) z przełącznikiem
+# ---------------------------------------------------------------------------
+
+def _accuracy_chart_data(summary: EvaluationSummary) -> dict[str, tuple]:
+    """Dane do wykresu: dla każdego trybu (etykiety, wartości 0–100, wartość ALL).
+
+    Per kategoria „pass-rate" zależny od strategii (N = TP+FN+FP+TN dla kategorii):
+    - contains_all: kategoria zalicza recenzję, gdy nie jest pominięta → (TP+FP+TN)/N = 1 − FN/N,
+    - is_exactly:   kategoria zalicza, gdy decyzja idealna (TP lub TN) → (TP+TN)/N.
+    Słupek ALL = accuracy na poziomie recenzji pod daną strategią.
+    """
+    labels = list(CATEGORY_CODES)
+    contains_all_vals: list[float] = []
+    exact_vals: list[float] = []
+    for cat in labels:
+        cs = summary.per_category.get(cat, ConfusionStats())
+        n = cs.tp + cs.fn + cs.fp + cs.tn
+        if n:
+            contains_all_vals.append(100.0 * (cs.tp + cs.fp + cs.tn) / n)
+            exact_vals.append(100.0 * (cs.tp + cs.tn) / n)
+        else:
+            contains_all_vals.append(0.0)
+            exact_vals.append(0.0)
+    return {
+        "contains_all": (labels, contains_all_vals, summary.accuracy_contains_all * 100.0),
+        "is_exactly": (labels, exact_vals, summary.accuracy_exact * 100.0),
+    }
+
+
+def _plot_accuracy(summary: EvaluationSummary, mode: str) -> None:
+    """Rysuje słupki accuracy per kategoria + ALL dla wybranego trybu."""
+    try:
+        import matplotlib.pyplot as plt
+    except ImportError:
+        print("matplotlib nie jest zainstalowany - pomijam wykres.")
+        return
+
+    data = _accuracy_chart_data(summary)
+    labels, values, all_val = data[mode]
+    x_labels = labels + ["ALL"]
+    heights = values + [all_val]
+    colors = ["#4C72B0"] * len(labels) + ["#C44E52"]  # ALL wyróżniony
+
+    title_suffix = ("zawiera wszystkie (contains_all)"
+                    if mode == "contains_all" else "idealnie (is_exactly)")
+
+    fig, ax = plt.subplots(figsize=(max(8, len(x_labels) * 0.6), 5))
+    bars = ax.bar(x_labels, heights, color=colors, edgecolor="white", linewidth=0.8)
+    for bar, h in zip(bars, heights):
+        ax.text(bar.get_x() + bar.get_width() / 2, h + 1, f"{h:.0f}%",
+                ha="center", va="bottom", fontsize=8)
+
+    ax.set_ylim(0, 110)
+    ax.set_ylabel("Accuracy (%)", fontsize=12)
+    ax.set_title(f"Accuracy per kategoria + ALL — {title_suffix}",
+                 fontsize=13, fontweight="bold", pad=12)
+    ax.set_xticks(range(len(x_labels)))
+    ax.set_xticklabels(x_labels, rotation=45, ha="right", fontsize=9)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    plt.tight_layout()
+    plt.show()
+
+
+def _display_accuracy_chart(summary: EvaluationSummary) -> None:
+    """Wykres accuracy z przełącznikiem contains_all / is_exactly (ipywidgets).
+
+    Fallback (brak ipywidgets): rysuje oba wykresy statycznie obok siebie.
+    """
+    try:
+        import ipywidgets as widgets
+        from IPython.display import display
+    except ImportError:
+        _plot_accuracy(summary, "contains_all")
+        _plot_accuracy(summary, "is_exactly")
+        return
+
+    toggle = widgets.ToggleButtons(
+        options=[
+            ("Zawiera wszystkie (contains_all)", "contains_all"),
+            ("Idealnie (is_exactly)", "is_exactly"),
+        ],
+        value="contains_all",
+        description="Tryb:",
+    )
+    out = widgets.interactive_output(
+        lambda mode: _plot_accuracy(summary, mode), {"mode": toggle}
+    )
+    display(toggle, out)
 
 
 def _display_comparison_table(trials: list[TrialResult]) -> None:
