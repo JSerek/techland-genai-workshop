@@ -14,13 +14,15 @@ tematycznych** (multi-label) — za pomocą modelu Gemini przez Vertex AI. Pracu
 czterech iteracjach, w każdej poprawiając prompt i metryki:
 
 1. **Iteracja 1 — Zero-shot** (`03`): pierwsza klasyfikacja, surowy prompt.
-2. **Iteracja 2 — Structured Output** (`04`): Pydantic + Instructor.
-3. **Iteracja 3 — Chain-of-Thought** (`05`): wymuszone rozumowanie.
-4. **Iteracja 4 — Few-shot** (`06`): dobór przykładów w prompcie.
+2. **Iteracja 2 — Structured Output** (`04`): Pydantic + Instructor — odpowiedź jako walidowany obiekt z **zamkniętą listą kategorii** (`Literal`).
+3. **Iteracja 3 — Chain-of-Thought** (`05`): wymuszone rozumowanie (pole `reasoning` przed kategoriami).
+4. **Iteracja 4 — Few-shot** (`06`): dobór przykładów w prompcie (na bazie CoT z iteracji 3).
 
-Każdy notebook ma **puste prompty** do uzupełnienia — to jest właśnie ćwiczenie.
-Punktem odniesienia jest golden dataset (20 recenzji z ręcznie nadanymi etykietami),
-a jakość mierzymy przez **accuracy + czułość + swoistość** (micro i per-kategoria).
+Każdy notebook ma **puste prompty** (multiline) do uzupełnienia — to jest właśnie ćwiczenie.
+Punktem odniesienia jest golden dataset (20 recenzji z ręcznie nadanymi etykietami), a jakość
+mierzymy przez **accuracy w dwóch wariantach** (`contains_all` — „zawiera wszystkie”, oraz
+`is_exactly` — „idealnie”) **+ czułość + swoistość** (micro i per-kategoria), wraz z wykresem
+słupkowym accuracy per kategoria.
 
 ---
 
@@ -76,7 +78,7 @@ Jeden plik z całą „infrastrukturą”, żeby skupić się na promptach:
 | `load_golden()` | wczytuje golden dataset (`records`, `texts`, `labels`) |
 | `show_categories()` | kolapsowalna tabela 15 kategorii z definicjami |
 | `show_golden_reviews()` | kolapsowalna tabela recenzji + etykiety |
-| `evaluate_trial(...)` / `compare_trials(...)` | accuracy + czułość + swoistość (micro i per-kategoria) |
+| `evaluate_trial(...)` / `compare_trials(...)` | dwa accuracy (`contains_all` + `is_exactly`) + czułość + swoistość (micro i per-kategoria) + wykres słupkowy z przełącznikiem |
 | `CATEGORIES`, `MODEL`, `MatchStrategy` | słownik kategorii, nazwa modelu, strategie dopasowania |
 
 ---
@@ -86,7 +88,8 @@ Jeden plik z całą „infrastrukturą”, żeby skupić się na promptach:
 `combat`, `parkour`, `enemies`, `night_horror`, `progression`, `world`, `story`,
 `bugs`, `performance`, `graphics`, `audio`, `content`, `price`, `coop`, `gore`.
 
-Pełne definicje wyświetla `show_categories()` w każdym notebooku.
+Pełne definicje wyświetla `show_categories()` w każdym notebooku, a osobna komórka
+wypisuje kody gotowe do skopiowania (`print(", ".join(CATEGORIES))`) — np. do promptu.
 **Zasada warsztatu:** w recenzji negatywnej oznaczamy tylko aspekty **krytykowane**
 (pochwał nie etykietujemy).
 

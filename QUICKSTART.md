@@ -12,7 +12,7 @@ Vertex AI oraz `git clone` repo. Uruchom wszystkie komórki — na końcu masz r
 
 ### 2. Uruchom komórki setup w notebooku 03
 Klonują repo, instalują biblioteki (`openai`, `instructor`, `pydantic`,
-`google-auth`, `pandas`, `matplotlib`, `tqdm`) i dodają `notebooks/` do `sys.path`.
+`google-auth`, `pandas`, `matplotlib`, `tqdm`, `ipywidgets`) i dodają `notebooks/` do `sys.path`.
 Pierwsze uruchomienie ~1 min.
 
 ### 3. Zaloguj się i wpisz `PROJECT_ID`
@@ -29,8 +29,9 @@ client = create_workshop_client(PROJECT_ID, location=LOCATION)
 > ~1 h — przy długiej sesji uruchom komórkę z `create_workshop_client(...)` ponownie.
 
 ### 4. Klasyfikuj
-Uzupełnij `SYSTEM_PROMPT` i `USER_PROMPT`, przetestuj na 1 recenzji, puść na 20,
-zobacz metryki. Potem przejdź do notebooków 04 → 05 → 06.
+Uzupełnij `SYSTEM_PROMPT` i `USER_PROMPT` (są multiline), przetestuj na 1 recenzji, puść na
+20, zobacz metryki: dwa accuracy (`contains_all` / `is_exactly`), czułość, swoistość oraz
+wykres accuracy per kategoria. Potem przejdź do notebooków 04 → 05 → 06.
 
 ---
 
@@ -45,8 +46,8 @@ zobacz metryki. Potem przejdź do notebooków 04 → 05 → 06.
 | 06 | `06_iteration4_few_shot` | few-shot |
 
 Każdy notebook: blok „mamy ekspercką klasyfikację 20 recenzji” (`show_categories()`,
-`show_golden_reviews()`) → **puste prompty do uzupełnienia** → klasyfikacja →
-ewaluacja (accuracy + czułość + swoistość).
+`show_golden_reviews()` + kopiowalne kody kategorii) → **puste prompty do uzupełnienia** →
+klasyfikacja → ewaluacja (dwa accuracy + czułość + swoistość + wykres per kategoria).
 
 ---
 
@@ -61,8 +62,9 @@ Token wygasł lub brak uprawnień do projektu. Uruchom ponownie
 czy masz dostęp do Vertex AI w regionie `europe-west4`.
 
 **Pusta / dziwna odpowiedź modelu**
-Najpierw testuj na 1 recenzji. Doprecyzuj prompt: format odpowiedzi i zamknięta
-lista 15 kategorii (`show_categories()`).
+Najpierw testuj na 1 recenzji. Doprecyzuj prompt: format odpowiedzi i zamknięta lista 15
+kategorii (`show_categories()`). Od iteracji 2 model jest ograniczony do 15 kodów (`Literal`),
+a `max_retries=3` automatycznie ponawia, gdy zwróci coś spoza listy.
 
 **Golden dataset nie znaleziony**
 Upewnij się, że repo zostało sklonowane (komórka setup) — plik leży w
