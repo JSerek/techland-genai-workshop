@@ -31,7 +31,7 @@ client = create_workshop_client(PROJECT_ID, location=LOCATION)
 ### 4. Klasyfikuj
 Uzupełnij `SYSTEM_PROMPT` i `USER_PROMPT` (są multiline), przetestuj na 1 recenzji, puść na
 20, zobacz metryki: dwa accuracy (`contains_all` / `is_exactly`), czułość, swoistość oraz
-wykres accuracy per kategoria. Potem przejdź do notebooków 04 → 05 → 06.
+wykres porównujący accuracy `contains_all` vs `is_exactly`. Potem przejdź do notebooków 04 → 05 → 06.
 
 ---
 
@@ -47,7 +47,7 @@ wykres accuracy per kategoria. Potem przejdź do notebooków 04 → 05 → 06.
 
 Każdy notebook: blok „mamy ekspercką klasyfikację 20 recenzji” (`show_categories()`,
 `show_golden_reviews()` + kopiowalne kody kategorii) → **puste prompty do uzupełnienia** →
-klasyfikacja → ewaluacja (dwa accuracy + czułość + swoistość + wykres per kategoria).
+klasyfikacja → ewaluacja (dwa accuracy + czułość + swoistość + wykres `contains_all` vs `is_exactly`).
 
 ---
 

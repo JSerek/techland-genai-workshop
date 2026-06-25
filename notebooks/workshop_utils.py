@@ -385,6 +385,10 @@ class TrialResult(BaseModel):
         """Tabelka wyników + accuracy + czułość/swoistość (micro) + per-kategoria."""
         _display_trial_table(self, max_text_len=max_text_len)
 
+    def plot(self) -> None:
+        """Wykres accuracy: contains_all vs is_exactly (osobna komórka)."""
+        _plot_accuracy_overall(self.summary)
+
 
 # ---------------------------------------------------------------------------
 # Ewaluacja — funkcje główne
@@ -520,6 +524,20 @@ def _truncate(text: str, max_len: int) -> str:
     return text[:max_len] + "..." if len(text) > max_len else text
 
 
+def _reasoning_details(text: str) -> str:
+    """Reasoning (CoT) jako zwijany <details>: skrót w nagłówku, pełny tekst po kliknięciu."""
+    import html as _html
+    text = (text or "").strip()
+    if not text:
+        return ""
+    head = text[:80] + ("…" if len(text) > 80 else "")
+    return (
+        f"<details><summary style='cursor:pointer'>{_html.escape(head)}</summary>"
+        f"<div style='white-space:pre-wrap;text-align:left;max-width:560px'>"
+        f"{_html.escape(text)}</div></details>"
+    )
+
+
 def _per_category_df(summary: EvaluationSummary) -> pd.DataFrame:
     """Tabela per-kategoria: TP/FN/FP/TN + czułość + swoistość (wiersz na kategorię)."""
     rows = []
@@ -545,7 +563,7 @@ def _per_category_df(summary: EvaluationSummary) -> pd.DataFrame:
 
 
 def _display_trial_table(trial: TrialResult, max_text_len: int = 80) -> None:
-    """Wyświetla wyniki jednej próby: per recenzja + metryki + per-kategoria + wykres."""
+    """Wyświetla wyniki jednej próby: per recenzja + metryki + per-kategoria (bez wykresu)."""
     summary = trial.summary
     micro = summary.confusion
     total = summary.total
@@ -581,7 +599,7 @@ def _display_trial_table(trial: TrialResult, max_text_len: int = 80) -> None:
             "Poprawne (idealnie)": "✅" if r.is_correct_exact else "❌",
         }
         if has_reasoning:
-            row["Rozumowanie (CoT)"] = _truncate(r.reasoning or "", 300)
+            row["Rozumowanie (CoT)"] = r.reasoning or ""  # pełny tekst — zwijany w tabeli
         rows.append(row)
     df = pd.DataFrame(rows)
 
@@ -597,108 +615,50 @@ def _display_trial_table(trial: TrialResult, max_text_len: int = 80) -> None:
             ],
             subset=correct_cols,
         )
+        if has_reasoning:
+            # zwijane <details> z pełnym reasoningiem (Styler domyślnie nie escapuje HTML)
+            styled = styled.format({"Rozumowanie (CoT)": _reasoning_details})
         display(styled)
         print("\nMetryki per-kategoria:")
         display(per_cat_df.style.hide(axis="index"))
     except ImportError:
-        print(df.to_string(index=False))
+        with pd.option_context("display.max_colwidth", None):
+            print(df.to_string(index=False))
         print("\nMetryki per-kategoria:")
         print(per_cat_df.to_string(index=False))
 
-    # Wykres accuracy per kategoria + ALL (przełącznik contains_all / is_exactly)
-    _display_accuracy_chart(summary)
-
 
 # ---------------------------------------------------------------------------
-# Ewaluacja — wykres accuracy per kategoria (+ ALL) z przełącznikiem
+# Ewaluacja — wykres accuracy (contains_all vs is_exactly)
 # ---------------------------------------------------------------------------
 
-def _accuracy_chart_data(summary: EvaluationSummary) -> dict[str, tuple]:
-    """Dane do wykresu: dla każdego trybu (etykiety, wartości 0–100, wartość ALL).
-
-    Per kategoria „pass-rate" zależny od strategii (N = TP+FN+FP+TN dla kategorii):
-    - contains_all: kategoria zalicza recenzję, gdy nie jest pominięta → (TP+FP+TN)/N = 1 − FN/N,
-    - is_exactly:   kategoria zalicza, gdy decyzja idealna (TP lub TN) → (TP+TN)/N.
-    Słupek ALL = accuracy na poziomie recenzji pod daną strategią.
-    """
-    labels = list(CATEGORY_CODES)
-    contains_all_vals: list[float] = []
-    exact_vals: list[float] = []
-    for cat in labels:
-        cs = summary.per_category.get(cat, ConfusionStats())
-        n = cs.tp + cs.fn + cs.fp + cs.tn
-        if n:
-            contains_all_vals.append(100.0 * (cs.tp + cs.fp + cs.tn) / n)
-            exact_vals.append(100.0 * (cs.tp + cs.tn) / n)
-        else:
-            contains_all_vals.append(0.0)
-            exact_vals.append(0.0)
-    return {
-        "contains_all": (labels, contains_all_vals, summary.accuracy_contains_all * 100.0),
-        "is_exactly": (labels, exact_vals, summary.accuracy_exact * 100.0),
-    }
-
-
-def _plot_accuracy(summary: EvaluationSummary, mode: str) -> None:
-    """Rysuje słupki accuracy per kategoria + ALL dla wybranego trybu."""
+def _plot_accuracy_overall(summary: EvaluationSummary) -> None:
+    """Jeden wykres słupkowy: accuracy całej recenzji — contains_all vs is_exactly."""
     try:
         import matplotlib.pyplot as plt
     except ImportError:
         print("matplotlib nie jest zainstalowany - pomijam wykres.")
         return
 
-    data = _accuracy_chart_data(summary)
-    labels, values, all_val = data[mode]
-    x_labels = labels + ["ALL"]
-    heights = values + [all_val]
-    colors = ["#4C72B0"] * len(labels) + ["#C44E52"]  # ALL wyróżniony
+    labels = ["Zawiera wszystkie\n(contains_all)", "Idealnie\n(is_exactly)"]
+    values = [summary.accuracy_contains_all * 100.0, summary.accuracy_exact * 100.0]
+    colors = ["#4C72B0", "#DD8452"]
 
-    title_suffix = ("zawiera wszystkie (contains_all)"
-                    if mode == "contains_all" else "idealnie (is_exactly)")
-
-    fig, ax = plt.subplots(figsize=(max(8, len(x_labels) * 0.6), 5))
-    bars = ax.bar(x_labels, heights, color=colors, edgecolor="white", linewidth=0.8)
-    for bar, h in zip(bars, heights):
-        ax.text(bar.get_x() + bar.get_width() / 2, h + 1, f"{h:.0f}%",
-                ha="center", va="bottom", fontsize=8)
+    fig, ax = plt.subplots(figsize=(6, 5))
+    bars = ax.bar(labels, values, color=colors, width=0.5,
+                  edgecolor="white", linewidth=1.2)
+    for bar, v in zip(bars, values):
+        ax.text(bar.get_x() + bar.get_width() / 2, v + 1, f"{v:.1f}%",
+                ha="center", va="bottom", fontsize=12, fontweight="bold")
 
     ax.set_ylim(0, 110)
     ax.set_ylabel("Accuracy (%)", fontsize=12)
-    ax.set_title(f"Accuracy per kategoria + ALL — {title_suffix}",
-                 fontsize=13, fontweight="bold", pad=12)
-    ax.set_xticks(range(len(x_labels)))
-    ax.set_xticklabels(x_labels, rotation=45, ha="right", fontsize=9)
+    ax.set_title("Accuracy: contains_all vs is_exactly",
+                 fontsize=14, fontweight="bold", pad=15)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
     plt.tight_layout()
     plt.show()
-
-
-def _display_accuracy_chart(summary: EvaluationSummary) -> None:
-    """Wykres accuracy z przełącznikiem contains_all / is_exactly (ipywidgets).
-
-    Fallback (brak ipywidgets): rysuje oba wykresy statycznie obok siebie.
-    """
-    try:
-        import ipywidgets as widgets
-        from IPython.display import display
-    except ImportError:
-        _plot_accuracy(summary, "contains_all")
-        _plot_accuracy(summary, "is_exactly")
-        return
-
-    toggle = widgets.ToggleButtons(
-        options=[
-            ("Zawiera wszystkie (contains_all)", "contains_all"),
-            ("Idealnie (is_exactly)", "is_exactly"),
-        ],
-        value="contains_all",
-        description="Tryb:",
-    )
-    out = widgets.interactive_output(
-        lambda mode: _plot_accuracy(summary, mode), {"mode": toggle}
-    )
-    display(toggle, out)
 
 
 def _display_comparison_table(trials: list[TrialResult]) -> None:
